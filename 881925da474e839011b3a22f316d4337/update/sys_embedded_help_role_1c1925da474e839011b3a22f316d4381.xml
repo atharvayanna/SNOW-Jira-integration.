@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_2071423_snow_j_0.admin" name="x_2071423_snow_j_0.admin">101925da474e839011b3a22f316d436f</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-15 06:43:14</sys_created_on>
+        <sys_id>1c1925da474e839011b3a22f316d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>101925da474e839011b3a22f316d436f</sys_name>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name>sys_embedded_help_role_1c1925da474e839011b3a22f316d4381</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-15 06:43:14</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
