@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=66000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>91ffe99a478e839011b3a22f316d43f6</copied_from>
+        <copied_from_name>SC --1</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>jira_story_creation_flow_v2</internal_name>
+        <label_cache>[{"name":"15ee497b-e73b-4b61-bfff-d9715708d2d6.retry_status","label":"9 - Jira story retry subflow➛Retry status","reference_display":"Retry status","type":"string","base_type":"string","usedInstances":{"97d0d714-12d1-443d-a3c3-f4ff2c6872c7":["condition"],"a1d8b482-d831-4059-91c7-33d932e0e038":["log_message"],"25c30094-3143-4eb9-b895-f53d2c1b5341":["log_message"],"ba7055b4-accf-4be5-bd39-c7d47d1092db":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1e267efe-cd2f-43c9-802e-fb26af062b71"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.acceptance_criteria","label":"2 - Get Catalog Variables➛acceptance_criteria","reference":"","reference_display":"acceptance_criteria","type":"multi_small","base_type":"multi_small","usedInstances":{"15ee497b-e73b-4b61-bfff-d9715708d2d6":["acceptance_criteria"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.business_justification","label":"2 - Get Catalog Variables➛business_justification","reference":"","reference_display":"business_justification","type":"multi_small","base_type":"multi_small","usedInstances":{"15ee497b-e73b-4b61-bfff-d9715708d2d6":["business_justification"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__.message","label":"5 - Create Story➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"],"b4cbea1a-1cda-4435-92d4-171ffc1a62b2":["condition"]},"attributes":{}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__.code","label":"5 - Create Story➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.story_id","label":"5 - Create Story➛Story ID","reference_display":"Story ID","type":"string","base_type":"string","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"88811f5d-c613-44a8-b291-1f097020b61d"}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__","label":"5 - Create Story➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD18e103b416a5111016416b7c01d1e123","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"50e22789-9208-4f58-8abc-f3fccec751c5"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"141ab3b3-473f-4da7-9575-561e6673ea95":["requested_item"],"f4419ba3-7c9b-4076-9f8d-60ea377bec45":["record"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.5f4e715a4702c39011b3a22f316d439b}}","label":"SNOW-Jira Product Owners","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"f4419ba3-7c9b-4076-9f8d-60ea377bec45":["approval_conditions"]}},{"name":"f4419ba3-7c9b-4076-9f8d-60ea377bec45.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"0ddf7f48-5a92-4aeb-b027-8f5a2b10c441":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.project_id","label":"2 - Get Catalog Variables➛project_id","reference":"","reference_display":"project_id","type":"string","base_type":"string","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["project_key"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["project_id"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.story_summary","label":"2 - Get Catalog Variables➛story_summary","reference":"","reference_display":"story_summary","type":"multi_small","base_type":"multi_small","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["summary"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["story_summary"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.business_value","label":"2 - Get Catalog Variables➛business_value","reference":"","reference_display":"business_value","type":"choice","base_type":"choice","choices":[{"label":"High","value":"high","order":100.0},{"label":"Medium","value":"medium","order":100.0},{"label":"Low","value":"low","order":100.0}],"usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["story_priority"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["business_value"]},"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.story_description","label":"2 - Get Catalog Variables➛story_description","reference":"","reference_display":"story_description","type":"multi_small","base_type":"multi_small","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["description"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["story_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry count","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"b86d1507-23d1-416d-b432-7e181cd77a07":["condition"],"a1d8b482-d831-4059-91c7-33d932e0e038":["log_message"],"63f406b1-9d42-4402-ab1b-9599a55b37f2":["condition"],"25c30094-3143-4eb9-b895-f53d2c1b5341":["log_message"],"b1d820af-b674-4b17-bbba-2400b23a712c":["condition"],"ce840363-30b9-4eff-9e34-1cf1c917ac8b":["condition"],"ba7055b4-accf-4be5-bd39-c7d47d1092db":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b233de2c-e67b-40c5-8feb-90d6fac5dd15","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>ba766b6e470e479011b3a22f316d43fd</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Jira story creation flow (V2)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3f76eb6e470e479011b3a22f316d4331</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a36af2e470e479011b3a22f316d4339</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Jira story creation flow (V2)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name>sys_hub_flow_8a36af2e470e479011b3a22f316d4339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:44</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>28862f6e470e479011b3a22f316d4378</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f76eb6e470e479011b3a22f316d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:44</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=8a36af2e470e479011b3a22f316d4339^sys_idNOT IN4e36af2e470e479011b3a22f316d433a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>8a36af2e470e479011b3a22f316d4339</id>
+        <name>Jira story creation flow (V2)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:31</sys_created_on>
+        <sys_id>4e36af2e470e479011b3a22f316d433a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:28:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4e36af2e470e479011b3a22f316d433a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=8a36af2e470e479011b3a22f316d4339^sys_idNOT IN8e36af2e470e479011b3a22f316d4362,c636af2e470e479011b3a22f316d435d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</model>
+        <model_id>8a36af2e470e479011b3a22f316d4339</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8a36af2e470e479011b3a22f316d4339</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>8e36af2e470e479011b3a22f316d4362</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e36af2e470e479011b3a22f316d4362"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</model>
+        <model_id>8a36af2e470e479011b3a22f316d4339</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_8a36af2e470e479011b3a22f316d4339</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:31</sys_created_on>
+        <sys_id>c636af2e470e479011b3a22f316d435d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c636af2e470e479011b3a22f316d435d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=8a36af2e470e479011b3a22f316d4339^sys_idNOT IN9a36af2e470e479011b3a22f316d43e0"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>9a36af2e470e479011b3a22f316d43e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:28:32</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=8a36af2e470e479011b3a22f316d4339^sys_idNOT IN9236af2e470e479011b3a22f316d43d8,9e36af2e470e479011b3a22f316d43dd,d236af2e470e479011b3a22f316d43da,d236af2e470e479011b3a22f316d43dc,de36af2e470e479011b3a22f316d43de"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>9236af2e470e479011b3a22f316d43d8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>141ab3b3-473f-4da7-9575-561e6673ea95</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V22rbQBD9FaFnY7SSLcd+64VCC20gLnkJYRmtRvHS1SW7KztuyL93VhfbsR0nhAQK7aNGc3bOnLld3fsy9Wd+kgUJRJCIiAUsCoLwbMSSOEpYmEaACP7ALyBH8tR4W6OxmHJpMSf7ElTtftzfz1EvpUDvE1hQ5Q1nw865cX14IOdUmkrB+rLDkEUspEo1Fv7s6nrgV6ApjEXtz+73ftl1hVxBgoqAF5gh/RFIL7w0gR47r5NcWsrAu2jpnUjOBW3s23ClTh29YODjncUiRQqfgTI48HMoUrClXvszq2syaIT0vFDrjcdCFrbNO4c7I3/T41E42Hl/5hvBiUZPYPOHd9I1yXcsva+tk1iUpPt5ZWVZtK9bSFQvcKnqvPjRJuhKgBnUyu6UoDb0OlYuF8euo5rNF+Vqo/MXWTRpdz9VKUBtvsBaLZPaonFlQ4U5PcRzqCpZ3PBKl0vZgIlLPrxR9DHMVLmioEbeFEMQjviQpIPhF7J/bsyXoKXL4js9Q2ASnoTkqS6rqkvOaew/NBrx29rxafPrMuGtGORghJaV/UBhltiRfhj0nZ+capyMbZuDtKYCWOSi6++9ARil0xDSMY4mAZ5F04CxJIIwzCIWp6NoxA7b/5vU4BnXMJ6gVmnK93YT8XxiPfZnl1k/uU1fGY+62eur4M3Rmue1eHpe2LvNi+VmbR4RMZwe5suOOjct9WOj9HzC/8ZsSUNLJy+poE12fFfgZsxoiIgySQlaLLbGBcXjui6szJE3g8BlwcvKLCWu3mpEJ6c7ebJty74J+tKbnfFM4yyCKQtHk9GR8UzCmescou704gWuBiLFMbDpE4DwEECM4hOA+AAwFpMYxml4fGNMsgMACzGG6Tg+DhhHB4AwSCbh2AGOUZpODwAg2FnMxvBEDmf7gMOl9l/nd9L5dXdhrmqz8D7W4hfa/jS8YKB6eL8gL3cm6sSwdfvfuKBJH7O7AOHpC9BZXnICWBgEweMr8MR+/+sWOC3ajA4nybDVjeqLjSh+A6Gg77XmX7SuqUkKoWryzEkKqSnKhqq7iRs3J80OCdR8pdtIG5dKE0Yv3Q1WKGyTZH9PylqL7t6Qdb/fX3s0rv8AD9d0p9MMAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9236af2e470e479011b3a22f316d43d8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>9e36af2e470e479011b3a22f316d43dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>a1d8b482-d831-4059-91c7-33d932e0e038</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UUWvbMBD+K0HPcYiTOGnyNpoVBmsLLXQPXTGydE4EsuTJctIs+L/vZCuOl4WRjMFg4Jf7/N3pu9N3et0TwcmCRAkLE8am0TgcDsf4JWnI5+FwDiy6mfEZ6RNFM0Cm1KtYwgYkQhsqS4cJlWoMuShySXcvHv3UoGwtJDegyOL1rU9yarCOBUMW+5NfdpdDLGmCpRfkdq0FA0y/VN4h8bPXdkauOwAhdiitDXc6hn0C7xYUBzwqpbKAPsmo4tRqs2sRA5Q/KnkE1kJZrEYc+b0Q37H0ZOh4KWBLDJp/bRj76TRwo6HAxvet8iDoPWgFvSDojLYjs+ofuX62JxfgmWGX+YUaJdSqQ94iciSPuuSPxmjToYKPPXdc4TVxSGkp7e31HYQXdzC6poPxFR1MXAfN8B9zKzRaj4TOGjSRXizTsszUQ2Mf0vb7cuL1Bl2etXxZ4HVD7izlPOINkz6v9fbp4Ic7oWpF/qfUjMo2otYakZTWzXdPQEKGheKM5jkOIs6N3og6GcVmg5XEYJBKvcVDC7FSA8pcawN0MB3cIb6s4RdqhGvzHstgclWbM/5WunObRr3iuB6LIxTMiNx+wHIb8OLcsOudHI1/t5MQ/byDGRQFXUHnZpa6VyorZE9qnS96+33dwcaLHBiwZhczjZyq+qqeXNgrLLVl4chhBDCZz5IAZuMkmCTTMEjSNA34fBZGs+ENH/Gpr9EkVdWvL9S/kPBnz+Ez+qFegUtHf0i8b+d+9jL8k1gcyh829a89iaMouu5NbNfyqq3835fu7QcS+5qKqQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9e36af2e470e479011b3a22f316d43dd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>d236af2e470e479011b3a22f316d43da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>f4419ba3-7c9b-4076-9f8d-60ea377bec45</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y32/iOBD+V1CeKeckJATeqqt66unuVqK9fSlV5DgT8Mo4bOx0l0P87ztOHEihzaIuq96u9gXJ4/nxzcw3js39xuGpM3FGUebBeOyRxCXEJyQKGIl8SPxROPIpI07fkXQJqFkAy4sU149UlEaw2dxC8cgZ9H6nmop8HruDAj6WoHTMNSy3W1ROuVoJun5vbVDCFlykBUhncv/Qd1a0QPcaCmeyOdjS6xXEgiYg0PAqZ+USpO7dXKGPU6E31tMG+2EuJgauU+s95kaIWwYP6TvwWYNMAaNlVCjoO0sqU6rzYu1MdFGioACavpNivdNYcKnrRJf0s+L/oXvfM3oZYGbMFmG3jG2BmtrkWM93K81zWUs0TURTuFyUS/lPnYEpLWS0FLpV2lKhP1gZyAZEjTC7XeSfpk28ay6r5CxakTMqdiuqdcGTUoMy3QABVU2WdLXich6vivyRV8YIZTmYC1wMMpF/wpiKz+WAMoN7gAWig2uUX1Xi97TgJom/0Q0ab6vk44+liVunYQHHVc51wqilWMFX+hJ9PoJFuO1b1iass/Vs3+na3Z60isXI0Yqfx+yc1uyFtHdT77+Oq3cmZq9qVP9kvE+Mj/FbolbLWNauLU/dbp5aySlEjcjbENUi+sGY+jWSwjD0A/wZZT5xPZdEEEYRGxPKojAMhv6+yRgPEVOB1KQKfe/pesYT9BYrJucNI08A1xheWnS9aYPuRdiWpaoJZRnqnY2hbviDUrTkdwe1qSV/HXbn+3DZhPtXcjzebkz3Qy8JxyRKL9KMJBfDyA8uKANyAaEbQJCGLHD9b+Y/cbsOvTR6hkgZB9G+YjQbx2PQ2nndOFybUE8O6RPwHo3EtQX8UiJ2IKrlwbF9vqGICHmjqfh5bxiskwzQOrw/5GUhO7gbL7iqWvoih1sa5+LyCfAb4z9r/IdUPkyrg8n+Lyb/j5k8DDqpAM+cXiyXKTf4VIvP9ZkHagofgGl1Kdd/3G82SlPN2SDIhjByAzocEY/5Y+K6iU89L/PdMB3642S7fTjm/xk8vm5e9jeaUoBqZuaEQu3ek9aus3B2Yva3JGtkp2Z4rufl2w3Nz3lvZ508yMb7vqclloPq9vtyM3NqkDNnMnNkLmHm9GeO0YoNISoxaiC43UYl22y221pSFtQ6cFvLvXVK16rSVGwBKZKqkj6R1Ey38nP+DXNrA/SuEPdvd7z1xfl61Xb/5ZS1/bOFbJ4QTSZ15Xj7exOc7Xsz/DU4B4+EeHexxs8LHkGvnqaHL68Or2BiFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d236af2e470e479011b3a22f316d43da"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Story">bfd18f7477a51110cc985228c81061b7</action_type>
+        <action_type_parent display_value="Create Story">50cbba7077a51110cc985228c81061f7</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bfd18f7477a51110cc985228c81061b7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>d236af2e470e479011b3a22f316d43dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X246bSBD9lRHPbi9NN5eet0jRaKMkm2hzeYkiVH1h3AkGwmUS72j+fQsMZsYeO5ZtjSaSHymoqlOnz6Hgy61jtXPphKGmURLyMASfUuoqJSLf8yIVUTegUjoTJ4O5wSeLMv9mVB1/NwsM3kDatNHbW8opSCYZ4SFLCNcQEuGHPvEDaoIgZAaEPx2Srb67w2xtqyKFxeejiqiZTXVpMufyy9eJU0CJOGtTOpe3a7fqRWHiFKRJsdeHurTZNabvO/6Q+H7Z/eJ1N/+jpLSNMFgNLfJSt3joxDG/apNpgy0TSCszceaQaajzcuFc1mWDgdKAfpeli9UTM5vVWMxpn/1V2f+wcuS6bvtkYnA2ZZZ3V5dxz+oyrGa5VeZdUds8W0ZqkGmfo/K0mWf/LGdoz8Mk0KT1cB4YaSqsZ4oWdAujx5R8mOU//x0aXtmsm6+/meYK0tUV1MiCbGpTtQfS2I9r3Cwjb9ZPxaRmjh3jORQFRmIk+MZ2XRD0fHqd4sU0SfOfiK6y19kUVDvhFMmE6RXGX3bhz1Dadty3WAaT23afMvujMa/aUxcUQunKhACXnPAkNES4gUdEIjlIYMKnyrnrqI1/NO1QS5J6OuIlo/hApUpb1C8Qwo3pJ7+b9M5ibJe0lDeKqGrmcygPcFXVCiju048w1madU3hrDwJWiSsGNijZ4inv7Knn5SnqSm3QVcST3CdchYoIEIrIBJ2GPnONoEd7Su6WVDQKCCfp6rQndaCv7pU42lvrtU7hrz3IGBJfPmDjUYq2+Izt9lkfORvt6YymOVUAQhMf2uUVRD4R3PWJZIHPAurjEkuOX147v4vw9MY3dafvorR5aesDdphsKpuZqoq7vCOM9kihk2yx3zMxJiIVF+9HKrZRtMVr/Oy1Z+a1KODgRhGQgAn0mgDcZ64LBDea57keAPNPsNR2KkzzUUid0Kp7Hts0y6l2y+8xDYlvBlDrILeo3D+r/JmpPGA6YV4iiK9kgL9DkSC4X/DvCHCdGFd7Kjxe5cluRcEoIKhayMY8hc73QDUkvhhhbQLdovXgrPVnpnXmMZEwAcTg+5vwKIpIJCNFmAgE9xl+Snj6+Dd6oqnaqirXHyXUFIjexDPbfSPcU7y7Kfmux8G6/4h/xH9d9SX2RTkkf+pgXvy9grkNfu8DmeepgWw0QngyI/A/3QYjNw998OCAnsQL0hUSAsGINooSLrkhQlBBBNP4V0FDQ7V7sBe+/g8neYZ6YhYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d236af2e470e479011b3a22f316d43dc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>ce840363-30b9-4eff-9e34-1cf1c917ac8b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>de36af2e470e479011b3a22f316d43de</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>ba7055b4-accf-4be5-bd39-c7d47d1092db</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UXWvbMBT9K0bPsYmTuGnyNtoVBmsLLXQPXTGydJ0IZMmT5bRZ8H/flS07XldGM/YwBn7R0bnX59wPPR6I4GRNkozFGWNnyTyeTuf4ZXnMV/F0BSw5X/IlmRBFC0Cm1JtUwg4kQjsqa4cJlWs8clGVku4fPPqpQ9lWSG5AkfXj04SU1GAeC4asD6+u7L6EVNIMU6/JxVYLBhj+Xnl94Gev7Q257gcIsT61NtzpmE4IvFhQHPBXOZUVTEhBFadWm/2AGKD8VskjsBXKYjbiyC+V+I6pF1PHywEtMejuhmPqq9PBnYYKjR8G5WEY3GgFQRiOSjuS2UyOXF/bVw3wzHjM/EKNEmozIj8jciTPxuSPxmgzooI/e+68wTZxyGkt7cXpDuJ3O5id4mB+goOFc9AV/7a0QuPokdiNBs2kF8u0rAt1040PGfw+vJr1Dr18c+TrCtsNpRspNyN+YPL7rX6+6+fhSqhWkb+UmlE5nKi1RmS1dfU9EJBQYKK0oGWJhUhLo3eiDUaxRbSReIhyqZ/xp5XYqIgyZy3CCabRFeKXLfxAjXA2rzENBjftcKbfavffzqhXnLZlcYSKGVHaD5huB16cK3a7k7P573YSkp93sICqohsYdeYOrNkHORUS+CSorNH7QGkbMNw0Czz6qjrGha6VXQeHQ+tw501Exl2mzF02Tc+9t9TWlSPHCcBitcxCWM6zcJGdxWGW53nIV8s4WU7P+Yyf+RxVG9Q0v75g/6LEP3tO73Ge2hV6b+v6wOuhb2820z+pVZ++3/S/9qTOkuS0N3VY65O2+n9f2qcf4CxrcukHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de36af2e470e479011b3a22f316d43de"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=8a36af2e470e479011b3a22f316d4339^sys_idNOT INda36af2e470e479011b3a22f316d43e1"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Jira story retry subflow">a6a7df6a478a479011b3a22f316d439e</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+2XS2/bOBDHv0qgs2lIIkVKubUNCrTobotmN5eiEIbUMGEhS6oeabNBvvuOLD8SN3LS2AV8MIIcNNK8/jM/kP5y67nMO/UkgsqsBKFi+k/8INAcwtDyQGaCQ+BNvAJmSF9WdfkNTZuS28S7hrzrjbe3gQhAc82ZUNwykYFiSaQiFskApVQcIYmma9+7O/LOXFPlcHOxUxBz5fKsxsI7/fJ14lVQU5kt1t7p7car9qbCNAeNOeU6b2tXXJL7c7tfOn4asp+8OxuRpE9DtmaZoKyzvppg4uHPFosMKaGFvMGJN4Mig7asb1aWGiH7WORrw5UrWorm9R//bNx/FDr2fb//0iK1ZnB4u3pMF6IOZnNVOoMfq9aVxWBpQecLH1Pm3az4e+ihHwda6PJ2OQ6ydA3Fw6qvui9jUZM9vyp/fF4mfOuKeYOLl3lpIF89QUsy6K7Fpp9H5/7ZEGewfNgcCuY4o4zpDKqKLCkJfO3mWajo2fQyp4epzcsfVF3jLospmL7DKakJ07dkP5ubL6B2fbt/URhy7tP9W7jvHb7rhw4gtRZWsVhbnwmIQxZHXDJthVIq4LFE7t3NpU2/d31Tg0gLOdJBUfqgMbWr2ldUwjUuOr+bLLjS4bbNMve4avpFSJtuNgNaiN9G64H7DnT9GmcfgD1DhrUjFXByvtJhRJ4RzMIjZgeGGcmYiNBHBokGJuIsYZoby4yBCIKMQxLKnTGzsG2/MrW5R9TPPFo/rxeidi/EzrhtxtoHcs+Q5CFyZw802SLXCHr8iN6BoRcFICW3mmkVR7SGiWZxKBTjmeYykUaBtLufcFvvTnjvhNNd4wpsmvRb17TOOgMv4+/xODtAuCXgXg6/pxVaOr5eVHLyfkOipyQcYVIcmTwwJrkKM/rjRGIQM+FHQLdOkbEQOZpEB8qK5A/fOtE8slADgy9nce63DwbXgf78xXOuxC/sXSykGJNohLXoyNqBsaaN8bXUEeMWEiYwSViiUTKIY1+Db7jh2e5XT7ltw6xcLxIYg1UL/QgpHm2yg98H7pEgO1A3Fm0vF9CnhVk6vlqVcfJmrcxW2UYglEcIDwzCmMbNfUU//VTkMxGGAR14FhgGUurY+Dax4sUQfv0fnb08MMAUAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>da36af2e470e479011b3a22f316d43e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>15ee497b-e73b-4b61-bfff-d9715708d2d6</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=8a36af2e470e479011b3a22f316d4339^sys_idNOT IN1236af2e470e479011b3a22f316d43ae,1636af2e470e479011b3a22f316d43af,1a36af2e470e479011b3a22f316d43b0,5236af2e470e479011b3a22f316d4399,5a36af2e470e479011b3a22f316d4396,5a36af2e470e479011b3a22f316d43aa,5e36af2e470e479011b3a22f316d43ab,9636af2e470e479011b3a22f316d43a7,9a36af2e470e479011b3a22f316d43a8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ad4c972647ca479011b3a22f316d43d4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>1236af2e470e479011b3a22f316d43ae</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>97d0d714-12d1-443d-a3c3-f4ff2c6872c7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf28pOmnTlDTEhIbEhDcTLhiLHvm4tXDuzHSCr+t93naSANtC+eNxDpfr4fpxzfY+yI66NTRvDlTsOQa8tOfp8MyXaJgz/74gy7v7crbU4syFyK+CyC2eSHBGW5SVXGSyWFH8rylid8yxTOSvlIudApsTyLWCkcFbqqJ2temBK7rhp08XJBsTtRKtJiM53E+GBR5CT0AoBIajWmA6jpQ6N4d31HyWJjTbSw6in4R47R/DkaPfDVewaqAyvwWDty+i1XWO6TgoV5YqtBBN5VuYZpdm7BavLvGaZRH08x7hD4slB4uS8R17XnvohHg6dnJeJFqNTAg8RrARsrbgJMCVbbiVPKh8RFCsvrHkCNtpGLEdS8EPQ37B2VhQpUAFqFDBcPh6rcZoDLDZOC7hoEsEBibw2Y45wpt3aj4OO9A6geGvi4R0QaQPWgyaRTixGSupy4+4/HRqeatsLHC+NE9w8nnjEMdRthJAeBgxssVC15U2Dw6ka7+50n4xctvO1wcM87SM2Tbs65yIRn+OM+PwU8fc9fM29Tio+YBlMHmjWPGhR9XuN5aJHCft+LNXXNhEaBI5SqmEaGBCE1008xj53MLLeT9/WFM/8sNuxAmCxWtYzWOb1bFGXbFYrpWZytWTFkr6TmSznHqLvKmwc27Dff2kpzeVVUvSTV/694Fv4aMULVTBavOyjRfmSj14e1CvmyX5hnvTcv+kdSul/8zw3jw7VYIJRW9/8r71zk5Z96BCGvZEgdEAiVwk7O3x30kWHC5Ac9gTdO3+bJDxh++9KkwuywQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">694c972647ca479011b3a22f316d43d7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Exit Loop">7444b31c37063110ac85cdd734924bff</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>97d0d714-12d1-443d-a3c3-f4ff2c6872c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>1636af2e470e479011b3a22f316d43af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>e323ea9e-890c-43fe-a901-db9eeacd7449</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9ca3efa6470e479011b3a22f316d43cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>1a36af2e470e479011b3a22f316d43b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>ce840363-30b9-4eff-9e34-1cf1c917ac8b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V224aMRD9FeRnhLy7QAtvUatISGkjlSgvbbSatWfBirG3thdCEf/e8V4gaklvymMfQOyZ2zmzc8SB2TpUdfB39sp7tTJs/vlhyJSJGP0+sFLb3Y1dKbEwPoARuNz7hWRzlkA2hTLF8RtOnxlPkiKDNC2zZCrHWcHZkBnYIGUKa6QKypq8AYZsC7puAmsUjwOHwe0HJSiNkoJS+UrD/v5XOWKttHTYsa3AUd+Ajs0PP4TCvsJcQ4GaWi2DU2ZF5SryLzmUyUwkIkunWcp5+nacFNOsSFKZAUJGeX3hu17A4KZBXlYW5xHu+0nWyUgr4UOGTwGNJPrzErTHIduAkRCs258QhyBvjT4Da2UCtWMx+cmrb9Q7nUxiYomkUWAbPD3m3fJaWKytEnhbRYItEqDQXY2wut6Yj62OuHYsodahXzshtad+WEXSkUVHqVyu7e5TP/BamUZgF9RWgD49QaA1FHVAH18MatxQo3wDVUXLyStnt6opJi6b0UrTwyheGw2NlzgCEYmPaEcwuib8fQPfg1NRxQdqQ8UtzQK8EnlztdQuOJJwbNaSf60joVZgJyVvt0EJXjhVhSuas8WO9XH4uif/7NoPh0bdthMwam46F7Y24Xj8UnOeieZbZj+74K9qX8MdM5iUk4RPLrtjPL3kjsvyX7BE+htLxJf4h47gnP+3xHNLKJ+3p91pa4b/syMe4gm3E3x7NxKF8kTkLmKL/r8iBvZ0ANE3Z2hn3WOUcMaO3wED2VXZdQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7e4fb1da4702c39011b3a22f316d43f2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>5236af2e470e479011b3a22f316d4399</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTYvbMBD9K8Vnx8ifWee2tCwEtl3oLntpFzOW5ERUllxLTjYN+e8d+SMJbZaWkmMPAftJM/Pe8zyy93Rnm86aJ31rjFgpb/HlxfeEchg+771K6u29Xgm6VMaCovxxZ5bMW3hpFGdQRTyZE/zlJAzLGKKoisOMJXGee76noOZ4k2rFhBVaFT3gexuQnTvARyZMI2H3fELoWkjW8pFJAy3WWN56i/0vR3bX8EJCySUWPtpWqBWWC8etIlCFOQ1pHGVxREh0k4RlFpdhxGLgEOO9qfD9RO7dfY+8zdrNQ9xMk3TLHK2Q+B5/tVwxjqMrkIb7Xg2KgdXt7oi0HNiDkidgLZQdFNfwasQP7B2lqbtYcdRIRzuOr8Vo1eSSFpQ/NI7ggFgo5WShll2tPg06nMm8gk7aM5M7g/1440g7FiOl6nGtt5+ngXdC9QLHQ6kpyOMbWLSh7Cw37sNwyWtsVNTQNGhO0bR6I/pi5FIHK4kvgdskHOq2LADqiAfoEQR3iH/o4WdohVPxEdtg8UCzBCNo0W8ktrMtSjj0thTfO0doEDhKKQY38IKhrWjsLc7Z8JH1wb/uOp9t8n5fJUmYlxDP5jQvZwmZZ7O8umGzjOC+zeclp0kaoC50BmSBsy0/HL52hMRsQHF7fovDtdpeI1M5pFUakvRyppLsUqYum/ZGkKI/BMl9+r/MESHkf5DOgyRMMQRi1NYP/+ccvbjFHyaYYW8Yp8IgkSeHLad/D3ewwwVwaTtBW91+cxJO2OEnsvWM3IcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">694c972647ca479011b3a22f316d43bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned>retry_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>5a36af2e470e479011b3a22f316d4396</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>6e26286a-f03d-473b-9f13-4bb2356b870a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTWvjMBD9K4vOSXBs56O5FZZCoLuFNtvLUsxYGidiZcnVR1JvyH/fUewkpd3DsuccDNLTaN6bpxm8Zyb4Jni3MrfOybVmi58vAyZ1xGi9Z5Uyu3uzlnypnQfN8al1S8EWDCucT7IU8tmcvptkPC4zSNMqG09FnmUZozQxjkM2hSrFfJbg57h8QnEaaqRIi962BTdBewK3oEJEE1oL6RoF7fM7iG+kEhZ7wQ1YyuHRssX+w5FvGywUlKjo5lJ7XFPUv2s73XyM4r6cxP1VcWQiUJ45jBVR0XjA8M2jFkicFSiHA1aDFuCNbc+IRRAPWl2ADSWidCwGvzn5m3LnSYyrkIrj2J2dt0VvUgfzjZEcHxovje4QD6Xq73CjQq2/dzVEe7GCoPzJXkKCo3zYRM1RRK+oetqY3eOJ8E7qY3n9oTIc1HkH3ltZBo8uvkiQq4/edND9p3dBhTVxFjU0jdTrorFmK488JLserRVtRrEpSV9s2BHwWOOI3ITRHeFfj/AzWBkL/kZper4fWr4GPPZumWaZwJQPcTorh3nCJ8N5heXwJhHTCvhEiPGEHY7mFq8hltXZ1BtSdJ5SgONWNv6WJGyxr/3wEnu3Y7+O0HWEriP0XyMkkEtHqlZRwvL0P4oHLXVOnKULtDP2V6zngh3+AARkUvLZBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">614c972647ca479011b3a22f316d43cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned>retry_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>5a36af2e470e479011b3a22f316d43aa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>800bd378-2554-4bc5-80ca-a094673e9c84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W204bMRD9FWsfgSy5EhKeIrWokWiRGspLg1Ze72zi1msvvgRSlH/vzF4SBFXV5ypPWR+PZ845Ho/yEpngy+DdnZk5J1c6mn5/OIukJgy/X6Jcmacbs5Jirp3nWsBi6+ZZNI26/WzSGwMMx5d8OJ50e710wPv9fNC7yIaD/iTCNBQn+OCC532M68L7uOEI4zQvACMteLtNhAnaI7jhKhCKn5l0peLb+wMi1lJlFhq6JbeYwYONpi9vtvy2hETxFBQenGsPK4z6d2btya9EjbXU/siXKiEo9zWMzYhR7yyCZw86A6yZc+XgLCq4zrg3drtHLPDsVqsDsMZEtdaCPzv5C3MPuxSXA4oTjQ/7ZdJ41NpjpIDb0kuja8TzVLXeGRUK/aXWQO5CzoPyr9wNDvNBSZyJRMMoX6zN09e24LXUlbxmUxnB1X7FvbcyDR4c3UiQd2+9qaGbd/cCCgqsmRS8LKVeJaU1G1nVQdpFvFK4iKklkR+1a8wFaYzRTR5fI/6hgu+5lST4M6Zp6n3T8jFA1blpfzDIoC86cDFOO8OuGHUuc0g7k252kXMxyrLeKNpV5iaPgWTVNjWGJLWnGOCElaWfIYUNyvM2QIuR7Nftgcu/BUfnJ0t9cjITApxjpON8VgljJIwFh14wvwaWZ0mFmPQHCB+zRZWAFcF5hvWC1Yyz6uXEjDLeUg8yHYoUf6RjJs8deJZu2WmPSc0+Wmss+4TtqKjEAmo7KzIbLhWZyEzVR441LcZCicRKi1TpzDKKlxHjOT6/lh4dh2delAqmyMYytzbW49UItgzd7iBrA2NskxXefCyCxa7ycRVId1vpwqpXlKtRts9C4PlSL3Wz0WarGgPrxa+sZ6esdxXtdrsHGil1Wxwn23GyHSfbcbL9P5MtAyEdJr0jWfP23xttbPFJ04g7QE/G/qR8B2z3GxrtqIIHCgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">654c972647ca479011b3a22f316d43d2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>5e36af2e470e479011b3a22f316d43ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>cc0794ba-2d57-4855-86dc-b5f6fba60255</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZbW/bNhD+K4I+ex4p6iX2t6JZgQDrOjRGvgyFQFEnmxgtaRSV1Avy30dKlKzYsvNSZ+nWAAkS3Z3vnuM9d+Ilt25Rq7JW1aJ4V1V8mbvzP75MXJ4bmf791s1EcfNrseTsIq8UzRlcbqqL1J27AZCQZh74EdLfM4RxQqjnZQSHqU9o4k7cnK5BW6a1pIoXeaw2JWjxNRW1kcPXUnDGVdwZaF3Kq1LQzZU1+cWaOAMTtuIilWChllTqKAqkO7/dUZlwsaAJCO3p/argzETnBrw/i0hwhv2IIIIJQkmIIQz9KEyykEZngbbrPnhuIzuLFv2BpJofc43AhilkajBhhCY6UQV5CjpwRkUFE3dN85SqQm56iQSafsrFVrDiudL+XGP8teJ/a+c+MnYZ6AQZtLr+MbYH14pbFG0BuzzGjvJYJWwC6G6y9fEZhFZfw5gPaXUjPvDQx+8gGeSKLke9lL12xI93p6uaQkZrod6fLkV8ghS9E6VITIpt+T6VjWruEkMvmghbc1aIep3/1tLQ7Q/k6lhXtSbnDzdXXWlUUBq6Gv5ZMmaXq+Lmc8e1DzxvsFqlKBgV/RNVSvKkVqY0ty4IWGtH8ZqWJc+XcSmLa958WKexni6FfpiaEaODmvEzpcwAmeruoNMPWn7eiK+o5OYAPmo3+sN3DfHjv2oTtz0CizhuDswYVEzyUr1jpl4WnCnRCcbZoH6Kr0HGzbSMNWQwz4NK78+zZ4+vc+3950XrvplgSYbTEIc4iUjo6QlGfBYyCGcAGNOZhwYTbEDHBrDTAHYMYMcifnRqdsw1hWvksVW8wLxrfD1l4PUd86SG+a+wXhe+ilta29ya4K/cDS1PtsR5Gfpf5AqW7RkYeGeIEIJmLCBRT/40BciyKMEe4FHyH8Vsec37OG98/pH5PPLaxrMI/YSw/nIQmiM8R2if4Nj5yHN9bM+f89vADdMhw37ADl1UExi5qB7J5f703r/EvOJl9Y3rr8X1vVttXGjIpuID9tNMNWns8L0Tn2InSxn1MQoOUN0LB1RfNNcYuXtVdwbAH5/igc2NfDebW3fIu7UY29ASyAo5fAn3gn7ZOb5DPRAMPymY983bTM+70Q2m0+7MACXr73EEdAjZJj62UQ7MLDW3pHtoXtz/q8SrDI9/eQ/CmRekB6dGRI5Mjf395xE5PbQA+f+Dd+g39s/4q27y1ldP6KuKrSCtxQt1UV/VrouyJAj0RfNAF4Xe/WumLp6jVuBkhdD5mqcB3ENp2DOXg9C2ZYITtgzx7rcMW+dDEGPtc7lV/whX0edeOb8YJraeqpZSKTBe6YALI7vo/mVgFBtNAtMDW9FNIf80ULeyu38AC/x9aXwYAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fa19d2de47c2c39011b3a22f316d4374</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>9636af2e470e479011b3a22f316d43a7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>b4cbea1a-1cda-4435-92d4-171ffc1a62b2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K1We2ygfTUp5QxtI1diQBuIFIevGvm69OXFmO0BX9b/vOkkBbaChicc9VKrP/Trn9h51F5nOt513V+bEObVuouOb22mkmoDR910ktbk/N2vFV43z0HC83LqViI6jZZmXIDOcLxL6LJM0rXLIMpmnpZjnsIimUQM1UiY3jVBemYb1wDS6A92FwEpOuEXwOPmmLEycN3Y7kaC0iylLKNdq2F6/KZlvlBYWR/4tWJrk0UbHu99Cftsi01Chpp6X3qpmTeUqKJIJyHTJU55nZZ4lSXY0T6syr9JM5ICQU96h8MNB0uS8R17XGuYR7g6TjBWBVppMI3zw2Aik0RK0w2lUQyMg6HpESLC4aPQTsFGNp3ZRSH5w6if1zooiJEokjRyH4OOTjVscYL4xiuNFGwgOiIdKjzXc6K5uvgw6wv5RQqf9Yf+EdI76YRtIBxYjJXm5MfdfDwPPVNMLHIPacNCPL/C0hqrz6MIPgxprasRqaFtaDmutuVN9MXGp47WmRxzuj4aG24yBB+Ix7QjiM8I/9vA1WBVUfKY2VDzQrMApzvo7pnbekoR9vxb2owuEBoGjFDZsgxIct6r1JzTnDkfW++n7muDZ/e92CxApllU2y3EhZnNRiNlyIcoZSF4WyVJWR1UWMzYIZzTbd46xuEbnYI37/fnq0+mptcb+6Zf3bf4e/lpCIYs0KV7217x8yV8vL/AVU2V/MVU4gzd6KkmS/6Z6birl2GCOUVs//J89dRtMMExww90I5MoRkauArQ7/PyGwpQMIznuC7o39HiQ8YftfW0sfN8kGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1a785fea478a479011b3a22f316d43ab</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>b4cbea1a-1cda-4435-92d4-171ffc1a62b2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>9a36af2e470e479011b3a22f316d43a8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:37</sys_updated_on>
+        <ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxthWvtq3slEIdCs0pS9bMdeSnIjJkifJSb2Q/74rfyRja9gHfZwhJjpX995zro7wgZjG1413j+bGObnR5PrTc0SkDhj+P5BSmf2d2Ui20s6DZmLduhUn1+QK6BzKTEwXCf6ukjQtKGRZSdM5n1JYkohoqATuZEZz6aXReQdEZAeqCYEH4W07oRMvK+EQ59LVCtqnC2G2lYpbMXCswWI1Lyy5PvwU8m0tcgWFUFhl7a3UG0yXgXXBIWNFMl3QhKY0SeZpxrIFLfGZw2KW4L4x8d1Ie3LXIZf1hH6Iu7GTsTzQSpMkIuLFC80F9i5BORGRCjQHb2x7QqwAfq/VGdhK7bEeCZtfnPyGxbPZLGwsBYpkog+elvkwuB5mWyOZuK8Dwx7xUKghhxnVVPpjLySMXJTQKD+OHJHGYT1RB9KBxUCpXG/N/mFseCt1p3AIKsNAnVbgcQ5F4/HM8GSEEhUWyiuoa5xOXluzk10ycqnijcJFHEyGTYMBY2CBeIwzgvgW8fcd/ARWBhUfsAwmHzv1+dcm9O11DIzzXjRucMzK2t9guZ0YyB2jtzX0D14+HDoRu4FnbIN5c2Ya7Y/Hz02SUNG9Of3V6H+V+xa3gC9Suiwv3YIle+0WvC7/gvWz31nf2+ZPnZ+EWv+tP1ofj9DlvbcHbV3zf74Sz8HDfQfXG4cLJh0SeQzYavwUhECLDggX5wztjf0SJJyx43dPcMMlVAYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8a36af2e470e479011b3a22f316d4339"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=8a36af2e470e479011b3a22f316d4339^sys_idNOT INca36af2e470e479011b3a22f316d4345"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b233de2c-e67b-40c5-8feb-90d6fac5dd15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</model>
+        <model_id>8a36af2e470e479011b3a22f316d4339</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_8a36af2e470e479011b3a22f316d4339</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:31</sys_created_on>
+        <sys_id>ca36af2e470e479011b3a22f316d4345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:28:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8a36af2e470e479011b3a22f316d4339</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>8a36af2e470e479011b3a22f316d4361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:28:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_8a36af2e470e479011b3a22f316d4339</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:28:32</sys_created_on>
+        <sys_id>ce36af2e470e479011b3a22f316d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:28:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_8a36af2e470e479011b3a22f316d4339"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_8a36af2e470e479011b3a22f316d4339"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=97431000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>91ffe99a478e839011b3a22f316d43f6</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>jira_story_creation_flow_v2</internal_name>
+        <label_cache>[{"name":"15ee497b-e73b-4b61-bfff-d9715708d2d6.retry_status","label":"9 - Jira story retry subflow➛Retry status","reference_display":"Retry status","type":"string","base_type":"string","usedInstances":{"97d0d714-12d1-443d-a3c3-f4ff2c6872c7":["condition"],"a1d8b482-d831-4059-91c7-33d932e0e038":["log_message"],"25c30094-3143-4eb9-b895-f53d2c1b5341":["log_message"],"ba7055b4-accf-4be5-bd39-c7d47d1092db":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1e267efe-cd2f-43c9-802e-fb26af062b71"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.acceptance_criteria","label":"2 - Get Catalog Variables➛acceptance_criteria","reference":"","reference_display":"acceptance_criteria","type":"multi_small","base_type":"multi_small","usedInstances":{"15ee497b-e73b-4b61-bfff-d9715708d2d6":["acceptance_criteria"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.business_justification","label":"2 - Get Catalog Variables➛business_justification","reference":"","reference_display":"business_justification","type":"multi_small","base_type":"multi_small","usedInstances":{"15ee497b-e73b-4b61-bfff-d9715708d2d6":["business_justification"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__.message","label":"5 - Create Story➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"],"b4cbea1a-1cda-4435-92d4-171ffc1a62b2":["condition"]},"attributes":{}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__.code","label":"5 - Create Story➛Action Status➛Code","reference":"","reference_display":"Code","type":"integer","base_type":"integer","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.story_id","label":"5 - Create Story➛Story ID","reference_display":"Story ID","type":"string","base_type":"string","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"88811f5d-c613-44a8-b291-1f097020b61d"}},{"name":"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2.__action_status__","label":"5 - Create Story➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"7362a1fa-407f-4e85-85c5-f21cc03cc55d":["log_message"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD18e103b416a5111016416b7c01d1e123","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"50e22789-9208-4f58-8abc-f3fccec751c5"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"141ab3b3-473f-4da7-9575-561e6673ea95":["requested_item"],"f4419ba3-7c9b-4076-9f8d-60ea377bec45":["record"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.5f4e715a4702c39011b3a22f316d439b}}","label":"SNOW-Jira Product Owners","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"f4419ba3-7c9b-4076-9f8d-60ea377bec45":["approval_conditions"]}},{"name":"f4419ba3-7c9b-4076-9f8d-60ea377bec45.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"0ddf7f48-5a92-4aeb-b027-8f5a2b10c441":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.project_id","label":"2 - Get Catalog Variables➛project_id","reference":"","reference_display":"project_id","type":"string","base_type":"string","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["project_key"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["project_id"]},"attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.story_summary","label":"2 - Get Catalog Variables➛story_summary","reference":"","reference_display":"story_summary","type":"multi_small","base_type":"multi_small","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["summary"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["story_summary"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.business_value","label":"2 - Get Catalog Variables➛business_value","reference":"","reference_display":"business_value","type":"choice","base_type":"choice","choices":[{"label":"High","value":"high","order":100.0},{"label":"Medium","value":"medium","order":100.0},{"label":"Low","value":"low","order":100.0}],"usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["story_priority"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["business_value"]},"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"141ab3b3-473f-4da7-9575-561e6673ea95.story_description","label":"2 - Get Catalog Variables➛story_description","reference":"","reference_display":"story_description","type":"multi_small","base_type":"multi_small","usedInstances":{"7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2":["description"],"15ee497b-e73b-4b61-bfff-d9715708d2d6":["story_description"]},"attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry count","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"b86d1507-23d1-416d-b432-7e181cd77a07":["condition"],"a1d8b482-d831-4059-91c7-33d932e0e038":["log_message"],"63f406b1-9d42-4402-ab1b-9599a55b37f2":["condition"],"25c30094-3143-4eb9-b895-f53d2c1b5341":["log_message"],"b1d820af-b674-4b17-bbba-2400b23a712c":["condition"],"ce840363-30b9-4eff-9e34-1cf1c917ac8b":["condition"],"ba7055b4-accf-4be5-bd39-c7d47d1092db":["log_message"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b233de2c-e67b-40c5-8feb-90d6fac5dd15","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Jira story creation flow (V2)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Jira story creation flow (V2)">8a36af2e470e479011b3a22f316d4339</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba766b6e470e479011b3a22f316d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ba766b6e470e479011b3a22f316d43fd^sys_idNOT INf6766b6e470e479011b3a22f316d43fe"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ba766b6e470e479011b3a22f316d43fd</id>
+        <name>Jira story creation flow (V2)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_id>f6766b6e470e479011b3a22f316d43fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f6766b6e470e479011b3a22f316d43fe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ba766b6e470e479011b3a22f316d43fd^sys_idNOT IN7676ab6e470e479011b3a22f316d4300,7e76ab6e470e479011b3a22f316d432b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</model>
+        <model_id>ba766b6e470e479011b3a22f316d43fd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ba766b6e470e479011b3a22f316d43fd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_id>7676ab6e470e479011b3a22f316d4300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7676ab6e470e479011b3a22f316d4300"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</model>
+        <model_id>ba766b6e470e479011b3a22f316d43fd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_ba766b6e470e479011b3a22f316d43fd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_id>7e76ab6e470e479011b3a22f316d432b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7e76ab6e470e479011b3a22f316d432b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ba766b6e470e479011b3a22f316d43fd^sys_idNOT IN8776ab6e470e479011b3a22f316d436f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>8776ab6e470e479011b3a22f316d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61TTW/bMAz9K4FOG5CDk6zNktswoECAbgWarpdiMGSJcoTJkifJbr2g/32kPxK3M4YB3U2iyMfHx6eHIzM8A8O27LaysyvjHmc7y+ZM2wjecnPXlICP4uC0AIx3h2sdIts+HJm656aihIyLH7l3lZWYpK5HmIowtZ2dM2bvJChemfiecncFzwmBznswICJItlXcBMDItzC+fdEhaJv3gef5iIByHv5O4GXGG9p+n7OCW8mj8805ybviDorS8AinoPMSPNsukmTOaiK6b8JOdl0tL6i/r2xKDFNNstf9NHiUOiBYc3+OiIM20oNF5ZFCyT0iRMI/vnrS1OIy2SRivdys18tktUoSdZEpoYRYf1wkl4uLDQJOr36SWHzlg/Fk8BTBypFgf6rjgcsba86BAxqsm6rgT0H/QvAPCeUpwDFEP/HpmvZqDEIQi9A60Py71eopr/aDJGSmKawXrqmnzDZIQb7ou33+/wQXbya4JIKddDdl1A7Nwla0Wp4ZqglN6BbuQWBJGr3OcyzEImeqwn6d8kXPfuTSKuC2oCRH0IqH77E/uMfbYZ1X2raU+kfjBDenG4/YOasi6XdkXNYcK8jR0WOP59YV6c+KKtp/MvRK24koIQivy/hJRF3D6dP+BvLQA67rBAAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ba766b6e470e479011b3a22f316d43fd^sys_idNOT IN8b76ab6e470e479011b3a22f316d436c,8f76ab6e470e479011b3a22f316d4366,cb76ab6e470e479011b3a22f316d436d,cf76ab6e470e479011b3a22f316d4368,cf76ab6e470e479011b3a22f316d436a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>8b76ab6e470e479011b3a22f316d436c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>a1d8b482-d831-4059-91c7-33d932e0e038</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTWvjMBD9K0HnOMRJ3DS5Lc0WFvoBLXQP3WJkaZwIZMkryWmzwf99R7aSeNOwNFDYw4Iv8/ykeW80M89bIjiZkyRjccbYRTKOh8Mxflke81k8nAFLLqd8SvpE0QKQKfUylbAGidCayspjQuUaQy5sKenmKaDfWpSthOQGFJk/v/RJSQ3e48CQ+fbo10eFSJph9jm5CSpOCHOb0kNspQWDEN+EY1c7UBvuZQz7BN4cKA6YP6fSQp8UVHHqtNnsEQOU3yt5AFZCObyNePKbFb8w32ToeTmgIwbtv32YhuK0cL6gjj46UzFXmUBtxVqsxXZvMYp6d1pBL4o61e5Ir/sHbij30ZsEZtxlfqdGCbXskF8ROZBHXfJXY7TpUCHEgTuu8eU45LSS7up8B/GHHYzOcTA+w8HEO2iLf186obEbSex7hmZy9zRaVoW6a/uM7P0+HbV/iy5OTkFlsQWg9G3m+yY0Uf640q8Pux65FqpRFH5KzajcR9Q5I7LK+fpuCUgo8KK0oGWJhUhLo9eiOYxii8FSYjDIpX7FpFYs1YAyb22AXU0H14gvGviJGuFt3uI1eLjuE7uxV5JaezCLLZz+rLyS1nrwkDaFao4wI0r3BROsIcj15W/GeTT+2zhD8uf4FmAtXULnrRa6VyknZE9qXc57223jaR1kDww4s0mZRk5d/1APPuxZR11lPTlOACazaRbBdJxFk+wijrI8zyM+m8bJdHjJR/wi3NEequv3a+xfSDhvZ36gyLtZuN1X+GTZw9602GrNdHX35uMO3I3up+3NUZJ8zuI8tYreD/dZs/3/je7Lb7edPBMUCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b76ab6e470e479011b3a22f316d436c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>8f76ab6e470e479011b3a22f316d4366</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>141ab3b3-473f-4da7-9575-561e6673ea95</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/jNhD9KwLPgiFKthz71mYRoEXbBdZFLosFQVGjmCj1sSRlr2vkv3coUbZiO04CbBZo0aOGM5z3ZuZx9HlPZE6WJCuijCc8EwmNaBJF8c2UZmmS0ThPOAAnIal4Ceip4WsLxkLOpIUS7RuuWnew369Ab6SA4JZbruoHRifeuXN9fETnXJpG8d29j0GLWEuVa6jI8vOXkDRcYxoLmiz3J0evxal4BgpdV21WSotAg089iisc7K7p7QVgPgHe9Ju/6tPIXuvcoYtCAt8sVDkgrIIrAyEpeZVzW+sdWVrdokEDzz9WanfwWMvK9rRL/s3IvzFpEoejvEtiBEN4A7DDCfOV69B49MEvvVPxAQu+wpTCtvpQ1hpbYfrS5VDwVtnbsa13+NhYWVd9iOWZGqJr1ZbVH321yOGCUdtag5CgcQVwlDy/YrWut4dq3cmqq5U/VLXgauQKXIv1nQTlGlu1ZYa+IeHWapm11uHcE1BQYgJW8qaR1QNrdL2R3aWIsZw8KPyYFKreIhgjH6oJF47QBPvAJ3do/9CZ77mWjt3veE2XpcausFzXTeNJu4aRx5CYnblV3Jgjd2wB+9o65H0lPGfWl82FCC0b+xMm3oCn9xgOusquzWtBjzOJrcT+WmDCq+dEXtN8EfN8BtN5BDfJIqI0S3gcFwlN82kypefi+lVqHhg3j4HASewa/Wa9vYx/0NufnsAg/246TYCaCIbyByuw5mXKb1cjfTc1WoYT8QSgYXgx23hKzPSULgn15UL8J5Trcv0o3UqDr2NZ48x0nNm4V52EUY5IBLviIB6Na8zHdFtZWQLrJMVkxerGbCRs30/+8+vymR+1MEzYMFdmJP08LRK+oPF0Pr0g/SxeurFEMq6CrIJtKHKYcbp4JiA+D0BE6ZWA9CxgJuYpn+Xx5ddoXpwF0BhSvpillwNmyVlAHGXzeOYCLkFaLM4CuKA3KZ3xZzjcnAacP5j/1/md6vy2nfMK0Qw7Z3hh70equSIov1iMas06a8VfYE9Wy8qdBD8PR367xNe3i7e8Zr3QOIqipxvmmd3xb10OT9cAPtcFbnis3bEPOBPQVZJ0IZj0vZbFqx59HLpKqBY9SyyF1JjlANUt6YObK80IBGi21X2mg0ujMUZv3E+BAmE7ksNWqlst/NZC66lGvt/q+fIPwi6NFdMNAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f76ab6e470e479011b3a22f316d4366"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>ce840363-30b9-4eff-9e34-1cf1c917ac8b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>cb76ab6e470e479011b3a22f316d436d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>ba7055b4-accf-4be5-bd39-c7d47d1092db</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXWvbMBT9K0bPtomTuGnyNtIVBv2ABrqHrhhZuk4EsuRJctos+L9PsuXEa8NooA+DgV7u0ZHuPffraY8YRQuU5iTJCblIJ8loNLEnLxI6T0ZzIOnljM5QiAQuwTK5XGcctsAttMW8dhgThbQmZbriePfo0W8dSjaMUwUCLZ6eQ1RhZf8xoNBi/+bqo4FwnFvvC3TjozgRmNlVDiIbyQh4+8Y/W/agVNSFMQoRvBoQFKz/AnMNISqxoNhItTsgCjC9F/wIbJgw9jfkyK+a/bL+piPHK8AqItDdHczMJ6eDiyts8MqomphaeWoXrLa52B8kRlFwJwUEUTTI9iD0Jjxyfbrf1MQzkyHzO1aCifWA/GKRI3k8JH9VSqoBFbztuZPGVo5CgWtulucrSD6sYHyOgskZCqZOQZf8+8owabsRJa5ncM770khel+Ku6zN00Pv4pv079OrkFNTatgBUrs1c3/gmKlYb+fLQ98g1E21E/pJLgvnBwsYoltfG5XePgENpP8pKXFU2EVml5Ja1j22wZbzm1ogLLl+sU83WIsbESYttV+P42uJXLfyIFXMyb+039nETIr3TS461Poq1LZz9rF0knXSvIWsT1T4hilXmi3WwBR+uS387zuPJ38YZ0j/HtwSt8RoGtXoAo3ZBgRkHGgbaKLkLhDQBsfNogMY/RMdYylqYRbDft5q3Xlas3GVG3GXT9NyVwabWjpykANP5LI9gNsmjaX6RRHlRFBGdz5J0NrqkY3rh/9Dto6Z5v+b+xRDP27kfKFI/S7eHCp0sm9+7NgnddA737qoH+9H/tL07TtPPWbynVtn75XDWbvj/Rv/5N62+FldUCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cb76ab6e470e479011b3a22f316d436d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>cf76ab6e470e479011b3a22f316d4368</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>f4419ba3-7c9b-4076-9f8d-60ea377bec45</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXW/iOBT9KyjPlHEICYG3qqirruZDgu68lCpynBvwyCRM7HSGifjvexM7JAMtAyvmodt5qeTre51zD+f4ow+FxSNrbA39uA+jUZ+ENiEOIb7LiO9A6Ay9oUMZsbpWQleAmRmwNItw/ERFXgaKYgbZE2fQuaGKinQR2L0MvuYgVcAVrLZbTI64XAu6+WxqMMKWXEQZJNb44bFrrWmGyyvIrHGxN3UqPkFDEJg6rQHuA1abdTmOUpavIEFwdfC9qZyYmc7dBGewqIRDuhZ8V5BEgDhiKiR0rRVNIqrSbGONVZZjIAMafUrEZpex5InSfa7od8l/4IedfpkXAzbGDAe7YWD40eF4gkTOcGWm8mxHV4oUS01JBDHNhbppx3TCp7XiaaJLFA1FXZ2KfJV81IRYuwVaP0cuEQSsyz5L5LqteLZMv01rkLc8qRgxLYqUUbEbUaUyHuaqhFNYIKCieEXXa54sgnWWPvGqGKGseguBg14s0m/4TckXSY+yEncPWaW9W4xPqvBnmvGyiQ+4DBZvu5bcyBtBpWxaQQ6Dr3mJRDdmWggqFjQFZR3L+Fpd41eewGDedo32Q3ZUW6yRkl6ukb5kASq9UvmhxqfaAxB17vT8eYo/AVWt+HsDaw+l0Xs1DKq5n+VelXU+6gmjdvu42k2kkbvWyTNq98krUrtp69XL/VdKh4HnuPhnGDvE7tvEB8/32YhQ5nueO3AaDSEC7IEK1DeVuHaj+Qts5ifAqKV9bXB0pjWOFwEauUv8YZLFntRnddDIvH+mzF/e1W3vLQk95/d7LOvIAc+/xxHl5/5JOO6rd6WOvH7ojYgfXUUxCa8GvuNeUQbkCjzbBTfymGs7v8FFxD62M0f+MyKNOYj2nameODRTa+Y8U52A6sBUtwbWS3CNparhcydIVb93glzOWj4hr8lbb+nKxI6KDVoHyZc0z5IjDgiWXFbKeNEJrYzzHHECyNoRf2uU+4bYB/9f/OD88cP/3w8D96jUWpfznapZmkS8RCxbrtA7M8gpfAGm5HWy+euhKKSiirOeGw9gaLt0MCR95oyIbYcO7fdjx/aigTMKt9vHQxddYMXzXHcCFbuXei5A/ooa47nmvmeK2r5rbolm0nhvcKm3+yuz3lt5z7CjWotHjbaiHAmiqv14L+aWhj23xnMrSROYW925VWYFpbiqMGYguN1EFSuK7VZH8oyaBezWsKmO6EZWmZItIUJtVtGfIkFlBhO/xH/KTuCk9t8kh85Ek3JIU/2cqnFqXvjBmTczCdVK7+55++xzL3b2Df7Y7xKPp2D3vMCDDXe/C3ry8V+LpJSNSxYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf76ab6e470e479011b3a22f316d4368"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Story">bfd18f7477a51110cc985228c81061b7</action_type>
+        <action_type_parent display_value="Create Story">50cbba7077a51110cc985228c81061f7</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>bfd18f7477a51110cc985228c81061b7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>cf76ab6e470e479011b3a22f316d436a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>7ad1e6b2-3e7d-4d5d-97d6-afc6509fb8b2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2X227bRhCGX8XgtVblcpeH9V0Qw2jRtAnqJDdBIMweaG1LkQwPTlTB797hSbQlW7ZsqyhcXXK4u/P/s/NhyC8rx2rn1AlDTaM45GEIPqXUVUpEvudFKqJuQKV0Jk4KC4Mr8yL706hq9pdZYvAKkrqJrlaUU5BMMsJDFhOuISTCD33iB9QEQcgMCH86bLb6+hp3a1vmCSw/P+sQNbeJLkzqnH75OnFyKFBnZQrndLXx6rFGE5AmwaUfujwnv7ZO77RfLfMmWFaFTS/753f99oshmBW6kUMnjvlRmVQb1BFDUpqJs4BUQ5UVS+e0KmoMFAb0+zRZrlfMbVrhYU6z9kdp/8Z0keu6zcrYoDVlurfrx1lf1C4cn0EFqKRWVV30S9U8s8qUXVG0iaFOqrc3Y92C93lls7TbUoFMht1ZUi/S37tqOOsDhjvESF2iCJM3ThvtvZH4Yp59/2NQeW7Ttij9yyRTkKyfoMLSybpq9Kyc2n7cqHIX2aqzScwCM84WkOcYmeFVXdk2C4peTC8TfJjGSfYd1ZX2Mp2CahxO8QZgeo7xszb8GQrb2P0Nj8HNTbpPqf1Wm1+a/hEUQunKmACXnPA4NES4gUdELDlIYMKnyrmeOOWyfJtAWY6Fwhuafasbm13Z+gLNuho3W1Rh8+oNiroyfS2uJz2fjO1qW+WNDVrWiwUUT2CzbPpw1m9/Bp7b5+xH6COsDoRerL1umd+HTO9I5isgk7pSG2STeJL7hKtQEQFCERkjr0irawQ9AJlyd7tGY3Oit/ac5u6eSOeNI55N6OZZ+1H6CNsDpWe3fN9ZjH1oZbtp7SNHXP/juGpOFYDQxIdmkAaRTwR3fSJZ4LOA+jhQ40MM0p3ff9gE4yxpKckLmxW2esI8lXVpU1OWs3bfM3C946A9J+rDntcTtTF98mE0fV8x9iGWH4l9DcRGAQc3ioAETCCxAnC2ui4QnK6e53oAzD/IgN3ZvZqPTdo2cXmD1G3k9p9zD2cf2Hk3pN+Usw8r/pGV18BKwHTMvFgQX8kAfxMjQXDW4V8j4GgzrvZUeAhW4t3dCmNzYk40YczL0vKI/AMtb0YB25L2ISY4EvMaiGEeEzETQAzOEsKjKCKRjBRhIhDcZ/gp5OlDTJdYU3Vvx7r+2J51jn7MbG7bb6Eb3Ljb4LQ59p81D2sZ6PnUijn5eS3mPpE9STLLEgPpBkofi9r8dN5r7XEKXwwn/r+Eaaz0bZpu1fpfIUq6QkIgGNFGUcIlN0QIKohgGv+2aGiodl+QqK//ACHrZKtMGAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cf76ab6e470e479011b3a22f316d436a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ba766b6e470e479011b3a22f316d43fd^sys_idNOT INc776ab6e470e479011b3a22f316d4370"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Jira story retry subflow">a6a7df6a478a479011b3a22f316d439e</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+2XW0/bMBTHvwrKc10lsWMnvG2gSZt209h4mabq+Aae0iTLhY1VfPedNGkLBQqhsIeqQjz4xOf29/nJ7veZ57R36HEDQlsOTMT4n/hBICmEoaUB14xC4I28DKYGdxZl/tOoeoJuI+8C0qY1zmYBC0BSSQkT1BKmQZAkEhGJeGA4F9RAEo1XvldX6K1dVaRwebpVEHXuUl2azDv8/mPkFVBimbUpvcPZ2qfH9pmCNClu/dzlOXh7fE/z9WXR2qq6dNlZv37fO58sjHmp22KCkWf+1CbTBquwkFZm5E0h01Dn5eXSUhrQn7J0ZTh3WY3RvHbzn8r9xXyx7/vtTmuwM2W6r8vlpNe0M9tjqAFLaVTdlP1WdZ47ZapOE20sNGl9dN3WbfhU1C7POpcaZLrwztNmmn3s1PCWARZHiJamwiJM0bba1t43Yk/O899fFlW+cdlclf5jmitIlyuoUTvZ1G09M69xX9dk7iy3hDapmWLGyRSKAi0TPKoLN8+CRU/HZykuxjbNf2N1lTvLxqDaDsd4BDB+g/bjufkUSte2+wHDoHOb7lvmfjXmbTs+AFxKZgWJpfUJgzgkcUQ5kZYJIQIac0O9q5FXXVZHKVTVSig8ocmvpm2zk60XaNJp3Lqo0hX1KyzqwvRaXI16OmW4aWrVNTqrdp4mVTOdAs7VYEBvuG/B6O04wzB9RMPpcgAw1cHJsuN7hBgCa7iHdRdgRe0TFvqGQCKBsFgnRFJliVIQQaApJCF/AVgtbJpdLdZnFDucR2tP8InAXguxNbTrsYaB+4jmb4J7fKP7DcIMAZjuAd4FgKMAOKdWEiniCEc3kSQOmSBUS8oTrgRw+xK37cY3orl228qmcpmpqsnPpqqddQqeRvHdcbZAeUPAgRfxw1oseH7d5zx4tybGQ2INIZvtyd4FsqkINf5R5DmICfMjwHc00yQ01KhEBsKy5L+/o426Y1g7kp9O9NzvOUheBXrOp/S851sEn/ZN3yfGEGKjPbG7QKxUypdcRoRaSAgzSUISaTiBOPYl+Ioqql/iMc03Ta/lqyEFpUxRQzsJGA95cDAc2zuCbMHufdEGPqkflmAB8KtlwoOjlQYbBRqCMt+jvAsoxzg41Bf4k1hEPmFhGODla4GYgHMZK98mlj0jyj/+AUxDDetkFgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>c776ab6e470e479011b3a22f316d4370</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>15ee497b-e73b-4b61-bfff-d9715708d2d6</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ba766b6e470e479011b3a22f316d43fd^sys_idNOT IN4376ab6e470e479011b3a22f316d4362,4776ab6e470e479011b3a22f316d4363,4b76ab6e470e479011b3a22f316d4359,4b76ab6e470e479011b3a22f316d4364,8b76ab6e470e479011b3a22f316d435e,8f76ab6e470e479011b3a22f316d435f,c776ab6e470e479011b3a22f316d435b,cb76ab6e470e479011b3a22f316d4357,cb76ab6e470e479011b3a22f316d435c"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ad4c972647ca479011b3a22f316d43d4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>4376ab6e470e479011b3a22f316d4362</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>97d0d714-12d1-443d-a3c3-f4ff2c6872c7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy2rbQBT9FTNr2ehh2bF3ISEQSBtoQjZtEFfzsIeMZ9R5JFGN/713JNkObUobkmUXBs+Z+zjnSAdtiQm+Cd7dmlPn5EqT5df7hEgdMfy/JUKZpyuzkvRSOw+a8pvWXTKyJFlezEDkfDpP8bdIs6wuIM9Fkc3YtABOEqJhw7GSGs2kl0ZXHZCQR1AhXpytOX0YSTFy3th2RC0Hz9nIBUq5cyIo1WI1k65R0N69qYmupWKWD3oasLjZc0uW21+uZNQiUhDZgma0yGdFnqb5yTSrZ0Wd5QyVQIEDFdRcxfV7MaOrDvmzSt82EXfeSr0azlfDlJs9aCyLrLI0IfzZc8048hGgHE/IBjSDKPKAoFZ2rdURWEvtcRyJxc9O/sCFeVnGQsFRIuX95eFYDWb2sDgHD0glUB/sUErXRqKRvTmMCwjKn73E+oLrJkrtWzzUat9tVNjoz70j5DBg/+wQCQ5J8CYqjdQHHeJmbZ6+7FleSN25MlwqQ0EdTuDRuzr4yGdLuOIbHFRtoGnQ0aqx5lF2zchlM1kpPEziO4xL4/s9ARqJT9BYmFwgft7Bd2BlVPEJx2BzT7MGJ2nVZQHHoU2c7BLiWnemwLmjSHS3+h4ixV7yIK7q/Ykt1MrGn+LmRz7o2CUfG60Xqdpus5Lz6WJej/m8qMfTepaNayHEmC3mWTlPT1jOZhPLvW0rXOyD2+2+hTQt2G3U+Fvi3j/wbWlcQCnKLC1fT+N09loaX7fkLRHM/xLB+Pz/MYFpmv6P4LsjKF3VB2fQ1i3/wATex8j0Ow9eU+mQ2m3ELvffwHjR4ssVc3qEnox9iKKO2O4nb0CNnk0HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">694c972647ca479011b3a22f316d43d7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Exit Loop">7444b31c37063110ac85cdd734924bff</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>97d0d714-12d1-443d-a3c3-f4ff2c6872c7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>4776ab6e470e479011b3a22f316d4363</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>e323ea9e-890c-43fe-a901-db9eeacd7449</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7e4fb1da4702c39011b3a22f316d43f2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>4b76ab6e470e479011b3a22f316d4359</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPTpA/U/ettBQK3Qpr6ctWzLU+EjFZ8iy5bRby33dlO0npOrayPO4hEB3p3nvOyT1kQ2zv2967O3vmnFoacvrlISLKBAy/b4jU9unaLhW7Ms6DYeJ27a44OSV5khYgE5EtKH5KGsd1Ckki07jgWVqWJCIGGoEvmTVceWVNNQAReQTdhwv8ypVrNazvDwhbKc07MTFpocMaLzpyunl1pQILSUHGJYtZmhRpQmlyksV1kdZxwlMQkGJDDbXQ+PR8R+PD9YD8np9ftwF3vlNmOZ2vpy63O9B2PLCKaUTEsxeGC+QjQTsRkQYMB2+79R7pBPAbow/AShk/Cm7g2akfODDJ8/BQCpTIJjf2x2pyaoTlBXhAKj3zfbc3ziom3GgOFxJ67c9fYuODmzZIHUs81HpXbXXfmE+jI2Tf4MUP0zskIdqgNFCfdMjblX36vGN5qczgynSpLQO9P4FH7+reBz4bIrRosFHVQNuio1Xb2Uc1FCOXZr7UeJiH7cOhYTPnwALxORoL80vELwb4HjoVVHzENlg80qzBKVYNW4zt0CZBthFxa3euwbmDSHS3+t4HiqPkSVw1+hNKWKdaf4aTH8WkYxsdNxQv8rDZyCyLyxrS2YKV9Syji2JWyhM+Kyju8mJRC5blc1SKXoGucLYX2+3XntKUjygu4S+hOlbb9yWzhFzmMc3fTmZWvJXMt+15TxyTP8Qx7MJfppFS+j+O/xxH5aoxRJO2YfgR0/gQ4jPO3HvNlENqdwG72v2ThYs1LlfI7AF6st23IOqAbX8CMnh+GBMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9ca3efa6470e479011b3a22f316d43cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>4b76ab6e470e479011b3a22f316d4364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>ce840363-30b9-4eff-9e34-1cf1c917ac8b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPEXISYIO3iqoSElulUfVlq6Ib2wGrxs5sB5oh/vuu8wHVxj7Q+riHoPjcr3NufMSBmMqXlXcP5sY5udZk9vkpIlIHDN8PpFBmvzRryRbaedBMrGq34GRGYkgnUCRi9I7iM6VxnKeQJEUaT/gozSmJiIatwExmNJdeGp01QER2oKomsBHseWCFt/WgAKkExyCXrlRQP/4uh22k4lZ0bEuw2NcLS2aHH0IyMC0oFPGUxSxNJmlCafJ+FOeTNI8TnoKAFBsqyIXC1HlPdbBskF9r8HUZcOet1OvuvOy6rHrQWB5YxTQi4sULzZH9rADlRES2oDl4Y+sTYgXwe63OwEZqj+1ISH5x8hsOTMbjkFgIlMhEGzwds253LVzcggekUjFf2S6VbYxkwrXL4aKASvn5a6xNuC+D1LbEQ676aqOqrf7YboScGvSfCpHKIQlRBqWBeqejWG3M/lPP8k7qZitdUBkG6nQCj7vLKx/4HIhQYouNsi2UJW40K63ZyaYYuWyHa4WHYbihODTc3iGwQHyIi4XhHeK3DfwIVgYVH7ANFrc0c3CSZc1Nx3a4JkGOEXG1mytw7iwSt5t9rQLFVnInLmv3E0qYlaW/wck70ek4Rm9rnFeeORwavbtO0rBxRsZMpf3x+KWiNGXNL09/9tJVtdd5bArjYhzT8WWPjSaXPHZZ6DXGSv5grPBV/9JXlNL/xvpnY0mXtXbotDXD39BXT8EI7czTrpl0SO0hYIv+fysEarxcwX1naG/scxB1xo7fATdiAkEBBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">614c972647ca479011b3a22f316d43cc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned>retry_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>8b76ab6e470e479011b3a22f316d435e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>800bd378-2554-4bc5-80ca-a094673e9c84</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W204bMRD9FcuPEJbcuD9FUFQkWiRCeWlQ5LVnE7dee/EFSFH+vTO7m4RCVfUD8rTr47mcOTM72lfuUqxSDHduFIKeWX76/aHDtSUM3195YdzztZtpeWVDFFbCeBGuFD/l3b466R0BDI+OxfDopNvr5QPR7xeD3qEaDvonHMOQnRSDQ1H00a4LH+2GB2hnRQlo6SH6xVS6ZCOCT8IkQvFV6VAZsbjfIHKujfLQ0q2ExwgRPD99fXf1vxSMyMGg6S1xYCsOfyUWFxWB2kaYYcoGuG79r9ao84oI9TocXiJYBcikECZAh5fCKhGdX6wRD0LdWLMB5hi+KbUUL0H/wozDLtkVgLXJVob1cdpK1MDFhYhiHH2SMfm1Yk5LCI0qCgqRTDx/izUGN1XUzjYuUeRm5e1MKu3XRg6+DvCmIykgCaioUGLellGM5+75dsXyUttak/bSOCnM+iRi9DpPkfi88qTv3svcQB+FBgMl5pyWoqq0nU0r7550nQdpl9nM4CGjMUZ+NOKZkFRjhi0Q2SXiFzV8L7ymgr9gmDbfN6sfE9TTnvcHAwV9uQeHR/nesCsP9o4LyPdOuuqwEPJAqd4BX3Z4WIRzI0LYSIU9mj4mKrQRrpVo2qhMLtLrKo6Q1BO6YNdghZEQb2cPj/8y5vs7E7uzM5LY08Cosv1RXSqjUlkKqA6Lc2CFmtaIy3+AjBkb1wFYmUJkmC95ywSrv7+MUcQbGmVmU5njQwfmiiJAZPmC7faYtuyT986zzzjVhlKMoRG4JvMktCFZmasnK7B2UlmqkFjlkSr5THg24UwU+BGv6JE7vIiyMnCKbDwLc+cjNkuySep2B2plmOHgzHAWMpk8zlnMakPqdl0XZj2jWG1l6ygE7k/sxLYXq2j1qGC+7I30bJf1zvhyuXygxdQMynY/bvfjdj9u9+N2P/65HxVIHTDoHZV1tfqTpIsF7gtalBvo2fmfFG+DLX8DEe7mCZMKAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">654c972647ca479011b3a22f316d43d2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>8f76ab6e470e479011b3a22f316d435f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>cc0794ba-2d57-4855-86dc-b5f6fba60255</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZbW+jOBD+K4jPuZwNAZp8W7VXqVL39tRU/bJaIWOGxDoHOGPazVX972eDeUlCss01e5dKlVo1njHjZ16ewZM+21kp81IW99mnomCL1J59/TayWapl6vOznfDs6TZbMHqTFpKkFObr4ia2Z7YHrk8SByYBUr9ThHHkEsdJXOzHE5dE9shOyQrUzrgURLIsDeU6ByV+JLzUcviec0aZDJsNShezIudk/WC2/Ga2WL0tdMl4LMBAzYlQp0gQ9ux5S8U0zMk0cL0LPAlc5GIXocjH4PuTwI8SnwQXnjLISQRcbb0yZ1j3Nc498Ks/M3VWxmizvjUmLhthJmINCSM0Un5KSGNQaBLCCxjZK5LGRGZi3UoEkPhLyjvBkqVS2bP15u8F+1udOEF6XwLKPwq1rl2GJm61OLkiksylKKkshdlaw61z2jg8FN1DyTFOoZdRZ+MOuFI/wpANYXQDNnDfxh8gKKSSLAat5K12wI7zohIdQ0JKLi9P5yI+gYvOiVx0tYt1+r7klWpmu7ruSMSb5Ga8XKW/1/VqtwF5OES0esvVj/lWFgoV5LqEdU2aAk3my+zprqm/a5ZWWI2SZ5TwdkWkFCwqpU7Nsw0cVspQuCJ5ztJFmIvskVUPKzdW4wVXi7HuOupQ3ZHGhGogY8UYMr5W8qtK/EAE0wH4rMyoh19GdrEuLjkpii4Mih7hX6VGUgfF+BBWIaweoYLl8hPVGTRwddJO0PN6GZVsBSKsWmqonAC97uV+t+kd3eOiBMc+9nEUuL6jepw7oT4FfwqAMZk6qNfjenVY4bIqXJbGZRlgr/bANMIqY5U87CmajqhaEfx6X8t/QlOsbJ2iKw61kV3eHUW798IdVUVFWFPB+FYdfnacqsuwq8vTkugCua6LptRzg5ZEcQyQJEGEHcCDJDoIzvBDFS0sqjD3eXHTSj9Y8cGKN7Ni4FKBpwH6BWH1YyE0Q3iG0C5NsPWZpSqQR9MFEjzx6L57dQQD9+oDmDdfJZvy210zzQ3rDG/XH4x5J4zZubmHmXJCF06PQySRlWNbrGnEx1EmpmSCkbeHMo7fo8x9dTcT24OH1YP4emeOGVjdM6RUN0U1cd9Oz9BgGkGSif4doRW0M97h0fEHh+GjDnPePMS1pTg4uDXarUahQnqOfaJBSNfhoUG6t83UcFeIxzeVze9x/pcO83PGP5w4Xry3rwTugb6yO/a9Avq/nfsmZ9hb/pPX9RtZOPxWHX2w803sLOgS4pKfmItJ5HnqYryHi76zeS1WWbPkEqwk48otveqh2ofWBLur/k3i3fXkhnjeCYnnOpvEo6u0D26IhPNOfQZkPP7unMyBCLq8ZsB1iqu8vLdvNb/pKq9tt5GmrFAQ7rXspvmHj1aslYeaX53oKRN/avCd7OUfMTfpDzoaAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">fa19d2de47c2c39011b3a22f316d4374</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>0ddf7f48-5a92-4aeb-b027-8f5a2b10c441</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>c776ab6e470e479011b3a22f316d435b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>b4cbea1a-1cda-4435-92d4-171ffc1a62b2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDDluPcgjwAo24DNEEuRSCs+LDZUqRKUklcw//epSTbQZuiCZpjDwbM2eXuzJgDb4lpfdN6d2vOnJMrTU6/3EdE6oDh9y0RyjwuzUrShXYeNOU3G7dg5JTMi7wAkfHJLMHPPEnTKocsE3lasEkOMxIRDTXHTmo0k14aXXZARB5AtaGwECNqOXg++iotjJw3djMSIJWLsYtJ1yjY3L2qma6lYpYP/BuwuMlzS063v5Rk4C4SEOmcpjTPijxLkuxkklZFXqUZy4FDjgMVVFxh6/me/GjZIX9W5TdNwJ23Uq+G83KYcrMHjWWBVZpEhD95rhlHPgKU4xGpQTMIsg4I6mXXWh2BtdQex5HQ/OTkD1yYTaehUXCUSHlfPBzLwcQeFhfgAam01Ld2aKVrIyl3vTmMC2iVP3+O9Q3XTZDaX/FQqf1to9paf+odIYcB+98MkdYhCd4EpYH6oEPcrM3j5z3LK6k7V4aiMhTU4QQevataH/hsCVe8xkFlDU2DjpaNNQ+yu4xc6nil8BCHN4tLw3uOgQbiMRoL8RXiFx18B1YGFR9xDF7uaVbgJC27t4/j0CZOdhFxG3euwLmjSHS3/N4Gir3kQVzZ+xOuUCsbf4abH/igYxe9b5SepWi7nQFLeVFl45zP2HjCpmw8n7FiDIIW02QuqpMqi8uyt6LE3b51ZRnX3DlY8d1uufhweWmtsb+n7n2Hvy2lc5iKaZpMX07ppHgppS9b9ZZoZn+JZngXr0xmkiT/o/nP0ZSu7AM1aOuWv2My70OU+p0Hr6l0SO02YIv9f2EobPBxhfweoUdjvwVRR2z3E1CNGVdVBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">694c972647ca479011b3a22f316d43bb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned>retry_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>cb76ab6e470e479011b3a22f316d4357</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>6e26286a-f03d-473b-9f13-4bb2356b870a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/iMBD9KyufAUESPsqtalUJqbuVCtvLqoom9gSsdezUH9As6n/fMQlQtT3sbS8cItlvnmfePHuUPTPB18G7lbl2Tq41m/967jGpI0brPSuV2d2bteQL7TxojsvGLQSbMyxxNk4TyKYz+q6Go1GRQpKU6WgisjRNGaWJPA7pBMoEs+kQP/OyMfE0VEhMi942OTdBewK3oEJEh7QW0tUKmqd3EN9IJSx2gmuwlMOjZfP9h9C/ilBQoCLqY1Tx7ajiS2m+qSMotcc1lWyB++784oQaK6KgUY/hq0ctkJSUoBz2WAVagDe2OSEWQTxodQY2lJ7SsUh+dfIPVcyGkVci9caxjZ22eedRC5e34GHpbeA+2I7KN0ZydK0rAksIyt+8x1rCQ+2l0e0RD4U6njYqVPpHawc7JTheCSHBkQisY6NReddGudyY3eNR5Z3UB0+6oDIc1GkH3ltZBB/17FmQq482t9Bno1FhRTXzCupa6nVeW7OVhzokuxqsFW0G8SGTvvjIB8BjjwO6AhjcEX57gJ/Aytjwd0rT1fup5UvAw3svkjQVmPA+TqZFPxvycX9WYtG/GopJCXwsxGjM3nrMNe5GgXNnq+iO8pcQG22N6yzKW5fjEW5l7a9J1BY7N96e4wS0ei6DeBnEyyD+x0EUyKUjnasoanH8N8ZAQ88yTuQZ2hn7O3Z4xt7+AjLn2ZRlBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1a785fea478a479011b3a22f316d43ab</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>b4cbea1a-1cda-4435-92d4-171ffc1a62b2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>cb76ab6e470e479011b3a22f316d435c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <ui_id>b86d1507-23d1-416d-b432-7e181cd77a07</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VW2vbMBT+K0HPxviSW/NWUgqBbIWm9GUr5kSSEzFZ8iQ5qRfy33fkS1K2hi2sjws4RN+56PuOz0cORFeurJx90rfWio0isy8vARHKY/j7QHKp90u9EXShrANF+aq2C0Zm5AbSMeQJH04ifG6iOF6nkCR5Go/ZMIUpCYiCgmMm1YoJJ7TKGiAgO5CVDzxyZ+pBOnCi4BZxJmwpoX6+EKZbIZnhHccSDHZz3JDZ4ZeQ8PzWDBK6joaTNErjNIrGcUKTSZrjZwyTUYQNJay5xNR5T3CwbJDLzF1detw6I9SmOy+7Lqse1IZ5VnEUBYS/Oq4YR0I5SMsDUoBi4LSpT4jhwB6UPANboRz2Iz751YofeGMyGvnEnKNGytvg6Zh1c2vh/A4cIJeKusp0qXSrBeW2nQ7jOVTSzd9ibcJD6bW2JQ7Wsq/WsirU53Yk5NSgf02IVBZJ8NIr9dQ7Hflqq/ePPct7oZqxdEGpKcjTCRwOb105z+dAuOQFNsoKKEscaVYavRNNMXIpwo3EQ+gXEy/1SxsC9cRDHCyE94jfNfAzGOFVfMI2WHwMiK3tXIK1Zy04xOx75Zm0yjoNWTsGX0KNKN0tXrDjHd1j8LG2eOOIw6GRteuYh8ZbIKO6Uu54/FpFUcqbb5b+bperaq/zEpvE6TS/5KUpfc9L7wu9xkDJnwyES/63/ol8r/8G+icD4TLYrPVDp625/AON9eKd0N55mjUVFqk9eWzR/y35QI3b5e13hvbafPOiztjxJxEWwoPgBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ba766b6e470e479011b3a22f316d43fd^sys_idNOT IN0776ab6e470e479011b3a22f316d4342"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b233de2c-e67b-40c5-8feb-90d6fac5dd15</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Jira story creation flow (V2)">ba766b6e470e479011b3a22f316d43fd</model>
+        <model_id>ba766b6e470e479011b3a22f316d43fd</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_ba766b6e470e479011b3a22f316d43fd</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:41</sys_created_on>
+        <sys_id>0776ab6e470e479011b3a22f316d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba766b6e470e479011b3a22f316d43fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_id>3a76ab6e470e479011b3a22f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ba766b6e470e479011b3a22f316d43fd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:40</sys_created_on>
+        <sys_id>f276ab6e470e479011b3a22f316d4328</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ba766b6e470e479011b3a22f316d43fd"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>8a36af2e470e479011b3a22f316d4339</sys_id>
+        <latest_snapshot>ba766b6e470e479011b3a22f316d43fd</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=8a36af2e470e479011b3a22f316d4339^sys_idNOT INbb76eb6e470e479011b3a22f316d4332"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>8a36af2e470e479011b3a22f316d4339</plan_id>
+        <snapshot>ba766b6e470e479011b3a22f316d43fd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-16 10:29:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb76eb6e470e479011b3a22f316d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-16 10:29:44</sys_updated_on>
+        <trigger display_value="">3f76eb6e470e479011b3a22f316d4331</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=8a36af2e470e479011b3a22f316d4339"/>
+</record_update>
