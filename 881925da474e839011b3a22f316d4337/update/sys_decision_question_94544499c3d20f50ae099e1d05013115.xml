@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>9c93bb45c3520f50ae099e1d05013166</answer>
+        <condition table="var__m_sys_decision_input_df29d6b987b23300c1e95773e8cb0b5f">webhook_event=jira:issue_updated^EQ<item display_value="Issue Updated" endquery="false" field="webhook_event" goto="false" newquery="false" operator="=" or="false" value="jira:issue_updated"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Jira Webhook Decision Policy">df29d6b987b23300c1e95773e8cb0b5f</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_df29d6b987b23300c1e95773e8cb0b5f</input_table>
+        <label>Jira story sprint details update</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>0</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-24 07:06:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>94544499c3d20f50ae099e1d05013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira story sprint details update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name>sys_decision_question_94544499c3d20f50ae099e1d05013115</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-24 07:06:23</sys_updated_on>
+    </sys_decision_question>
+</record_update>
