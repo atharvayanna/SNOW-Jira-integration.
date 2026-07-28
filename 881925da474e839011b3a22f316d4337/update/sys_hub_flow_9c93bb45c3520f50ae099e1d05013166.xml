@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation>Sample sub-flow to handle various JIRA webhook events</annotation>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=4999000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=9920000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -18,7 +18,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>jira_story_sprint_email_subflow</internal_name>
-        <label_cache>[{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.sprint_details","label":"2 - Extract sprint details --2➛Sprint details","reference_display":"Sprint details","type":"string","base_type":"string","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["parm1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce7a926c-5760-4adf-b187-e2f66c160694"}},{"name":"530f4f4b-73ec-457c-a7ed-463fd7e3a907.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.story_id1","label":"2 - Extract sprint details --2➛Story_id","reference_display":"Story_id","type":"string","base_type":"string","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null,"conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fcbf20e7-a648-452a-877e-912f37adce17"}},{"name":"undefined","label":" - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null]},"attributes":{}},{"name":"subflow.webhook_event","label":"Input➛Webhook Event","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Issue Created","value":"jira:issue_created","order":1.0},{"label":"Issue Updated","value":"jira:issue_updated","order":2.0},{"label":"Issue Deleted","value":"jira:issue_deleted","order":3.0},{"label":"Comment Created","value":"comment_created","order":4.0},{"label":"Comment Updated","value":"comment_updated","order":5.0},{"label":"Comment Deleted","value":"comment_deleted","order":6.0},{"label":"Worklog Created","value":"worklog_created","order":7.0},{"label":"Worklog Updated","value":"worklog_updated","order":8.0},{"label":"Worklog Deleted","value":"worklog_deleted","order":9.0},{"label":"Attachment Created","value":"attachment_created","order":10.0},{"label":"Attachment Deleted","value":"attachment_deleted","order":11.0},{"label":"Project Created","value":"project_created","order":12.0},{"label":"Project Updated","value":"project_updated","order":13.0},{"label":"Project Deleted","value":"project_deleted","order":14.0},{"label":"Version Created","value":"jira:version_created","order":15.0},{"label":"Version Updated","value":"jira:version_updated","order":16.0},{"label":"Version Deleted","value":"jira:version_deleted","order":17.0},{"label":"Version Released","value":"jira:version_released","order":18.0},{"label":"Version Unreleased","value":"jira:version_unreleased","order":19.0},{"label":"Version Moved","value":"jira:version_moved","order":20.0}]},{"name":"subflow.payload","label":"Input➛Payload","reference":"","reference_display":"","type":"string_full_utf8","base_type":"string_full_utf8","column_name":"","usedInstances":{"df1e78e3-8d71-44f2-adc0-a7a2994c677a":["payload"]},"attributes":{"uiType":"string_full_utf8","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a8483db5-7fcc-4be1-a877-d6f0d1f6ed27","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.sprint_details","label":"2 - Extract sprint details --2➛Sprint details","reference_display":"Sprint details","type":"string","base_type":"string","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["parm1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce7a926c-5760-4adf-b187-e2f66c160694"}},{"name":"530f4f4b-73ec-457c-a7ed-463fd7e3a907.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["record"],"43e6567a-e21b-4515-bb82-c0172dd37ffe":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.story_id1","label":"2 - Extract sprint details --2➛Story_id","reference_display":"Story_id","type":"string","base_type":"string","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null,"conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fcbf20e7-a648-452a-877e-912f37adce17"}},{"name":"undefined","label":" - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null]},"attributes":{}},{"name":"subflow.webhook_event","label":"Input➛Webhook Event","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Issue Created","value":"jira:issue_created","order":1.0},{"label":"Issue Updated","value":"jira:issue_updated","order":2.0},{"label":"Issue Deleted","value":"jira:issue_deleted","order":3.0},{"label":"Comment Created","value":"comment_created","order":4.0},{"label":"Comment Updated","value":"comment_updated","order":5.0},{"label":"Comment Deleted","value":"comment_deleted","order":6.0},{"label":"Worklog Created","value":"worklog_created","order":7.0},{"label":"Worklog Updated","value":"worklog_updated","order":8.0},{"label":"Worklog Deleted","value":"worklog_deleted","order":9.0},{"label":"Attachment Created","value":"attachment_created","order":10.0},{"label":"Attachment Deleted","value":"attachment_deleted","order":11.0},{"label":"Project Created","value":"project_created","order":12.0},{"label":"Project Updated","value":"project_updated","order":13.0},{"label":"Project Deleted","value":"project_deleted","order":14.0},{"label":"Version Created","value":"jira:version_created","order":15.0},{"label":"Version Updated","value":"jira:version_updated","order":16.0},{"label":"Version Deleted","value":"jira:version_deleted","order":17.0},{"label":"Version Released","value":"jira:version_released","order":18.0},{"label":"Version Unreleased","value":"jira:version_unreleased","order":19.0},{"label":"Version Moved","value":"jira:version_moved","order":20.0}]},{"name":"subflow.payload","label":"Input➛Payload","reference":"","reference_display":"","type":"string_full_utf8","base_type":"string_full_utf8","column_name":"","usedInstances":{"df1e78e3-8d71-44f2-adc0-a7a2994c677a":["payload"]},"attributes":{"uiType":"string_full_utf8","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a8483db5-7fcc-4be1-a877-d6f0d1f6ed27","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>a7c37785c3520f50ae099e1d0501313e</master_snapshot>
         <master_snapshot_digest/>
         <name>Jira story sprint email subflow</name>
@@ -39,7 +39,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9c93bb45c3520f50ae099e1d05013166</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>Jira story sprint email subflow</sys_name>
         <sys_overrides/>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
@@ -47,11 +47,11 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name>sys_hub_flow_9c93bb45c3520f50ae099e1d05013166</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:02</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:03</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>e6a6c011c3160f50ae099e1d0501316e</version_record>
+        <version_record>b3695095c3960f50ae099e1d05013149</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=9c93bb45c3520f50ae099e1d05013166"/>
     <sys_variable_value action="delete_multiple" query="document_key=9c93bb45c3520f50ae099e1d05013166"/>
@@ -252,7 +252,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5093bb45c3520f50ae099e1d05013182</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -260,7 +260,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -360,7 +360,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5893bb45c3520f50ae099e1d05013186</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -368,7 +368,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -468,7 +468,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1c93bb45c3520f50ae099e1d05013195</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -476,7 +476,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -576,7 +576,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1893bb45c3520f50ae099e1d05013187</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -584,7 +584,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -769,7 +769,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9893bb45c3520f50ae099e1d05013183</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -777,7 +777,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -962,7 +962,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d893bb45c3520f50ae099e1d05013184</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -970,7 +970,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -1070,7 +1070,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9893bb45c3520f50ae099e1d05013185</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1078,7 +1078,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -1178,7 +1178,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9493bb45c3520f50ae099e1d05013188</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1186,7 +1186,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:14:56</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -1287,16 +1287,16 @@ Sample sub-flow to handle various JIRA webhook events.
         <display_text/>
         <flow display_value="Jira story sprint email subflow">9c93bb45c3520f50ae099e1d05013166</flow>
         <generation_source/>
-        <order>4</order>
-        <parent_ui_id/>
+        <order>5</order>
+        <parent_ui_id>43e6567a-e21b-4515-bb82-c0172dd37ffe</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 06:13:20</sys_created_on>
         <sys_id>8688bbcdc3520f50ae099e1d050131ed</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:26</sys_updated_on>
+        <sys_updated_on>2026-07-27 06:16:48</sys_updated_on>
         <ui_id>5d114a19-f905-4385-b969-bd49de108d05</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2X227bOBCGX0XQtWVQJHXyXdFsFgG67SLp9qYoDIocxgxkyaGktN4g796hJJ8bNw7SAIvujQEND/r5z3wa+vO9b5Q/8VMpGAEFWjPCwpAkicgiJWSSsVyHGfgjvxRzwJlwB2Uz7R5G/p0oWheMRMRZLiPJIkp0RASQLINQkYiELNQxTlWmXhRi+WlY8W1KSRJyyqZ1WX2d3kzJ+MZY4dVNZZcezIUpcJGcmUJZKP3J5y8jfyEsvrYB60/u94aeeohC5FDg1D/cKR45VLNcuJgFDbi/XIXeDUsvt+KVVU5NOPLhWwOlApShRVHDyJ+LUgl3GH/S2BYDFoT6UBbL9YyZQQkT/wxqY0F5V8u6gbnXKfOamWi8ela1hfJy8LSb4btNv9XmX1TH6GhL4MSvl3V/BgvXpnYWbY1PB+9X5/Yuu0lWNKYqcaI+E424QpWyaa3brXO+MhLq3l20VLRF83Y71k/4sOj26JY0Ii8e0yKrop2X73u3/fWOq2rASFujTlg4E50tg0f6alZ9XTt+bsrO72GwqKQotqaCsHJ2bqBQ+ykVTWNN3jZO/L3fmo+HKe6DP0oyFDB3e83FYmHK6+nCVnem04HHmo+vC3wY6wKrWGEqr8uxkM6UMaZfjM8xftaFPwlrnEN/4TadJ635pzS3LVx0coEwUIkOEsF5wHmUB3nOWSBJlGWCUKpD6j+MnLlvC1HXGyvxENPb1hnRGztYOO3T4pZIaxbNGxR1B4NbD6OBe0mOISP4BhELEqt9i/n7+4gRzTXPg4SBDHiUyEAkoAIeM60SYCIjyfiyW/fwcPgJOJnvJ4gt1vkb1O6rH+BWlWy7pBq1h/fZMOJdnG0Apy8B+J+uUHphXpXfgGw8bas5sg4e9NR3BB3B/BGqX57h5yDbu3ACsY9QuZubXS53s/MqZOpQiiikLKAMC5xnMg1SDviDfFKepZLK+Blk9k7/DM+jHU0kmwJflc6Kzlri5/d2arClHJJ3CXg4/DIr76IfP5HDn6tacfhxkLWncqCwe9xuu++2l3nv+4GBQXacwSGygbAvxzVKKfkPoXR693uEpR2Hd1Ha8fhVSMoo5zpO0yCnArtEGnPscSQN8B5IKNYTZRH7BT1OpUfLNd+UJxb+PNxpcUqHkKTAglQlIbZlTQOhJME+J2iWcRnjZuN6YfFLj840eGutf9Tqnr/RaWQ+4agrMv9ebeWFhwYMfOIdEYthj82rVXDgkp/I5W5zfFMuvc7u/sproa6KO6i9pvLcn4HhVVsUk9+S47UTuwyvc/Eq/MYRyQihOlBxCgEPXQ2HWRpQyvJQxZLTOPsV/PKjRa13y5du8fsCd84nvPyQKHoo6RSiov+J+k2I0jzmTCZJwIn735Sl2BETiAIWKZ1wlcg4DV+QqC/fAZ9EIWfvEQAA</values>
@@ -1317,10 +1317,10 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 06:13:48</sys_created_on>
         <sys_id>b8a8ff01c3920f50ae099e1d05013184</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:25</sys_updated_on>
+        <sys_updated_on>2026-07-27 06:16:48</sys_updated_on>
         <ui_id>530f4f4b-73ec-457c-a7ed-463fd7e3a907</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5fwK9C3UyukSntbadvbl92V5dhOsc7Yqe20SxH/+43jBBCkQHRUanWPGY/tb2a+bzLJj1XIaXgV0mk0zabT0SSJosEgisbjAcFxmg7GJI1SPAw7ocQLBp4Wp4LB4zMWhXs2BGn2hLhlC7BSbnKBl9+rxW/sqWDGMhrc+nUy54JqJsOrH786YY41HGqZDq9We0vnohI4ZQJcHypYeyjtMt88onLN277sbgu++gWlqYMSdUL22zJJGWDIsDCsEy6wpNgqvdxYNMP0ToqtYc6lhRND5/zb8Fe4dxI5v4xBVIT5tc0jqlLlzdkNtvje6oLYQleuZK44Ycbng7IMF8Je79q8w11uuZJ+iw/b71aiWMivPh3h5oC6MmApDIBguQvUIa/CyO7n6uVbjXLGZZmTalEogsXmCVureVpYh2cVMsEWcBBa4Dzn8hHlWj3zcjNgWfQeBTz0MqFe4FLDH2UPEwe8B3nFvRnYb0rzd6y5i+IvOAY2AyAugCHIl9CoQpepfEZEFKZc0Fgaf1a47oRmaa4FNmYbOaQcPRUOt89DFTHySXNbiOa5/ROOeGZVcOtOLYzRUQpOt5QjSlLuUJgddRClNRPYmRGnPws4hK5WNItZMmGD7oQmcXc4zPpdTEnUxQnuT6dDMk4S3DOObrApXq8PhXWxc1sK8nQ2akFe76ajKUWVNA9sX5oOqKQZX0yawyj6TOKEyz+eNturzafghORiepRkdMsno7RFPpc7mjtUS2uenwGh5vmdY2aQLt9CVdE840zQpjfQzC3svYH6/8830IckOQCiyFePS8FlOU4A0Pdi/+go9dJ4j2clvXamMWfDhhxqAAdWBa+tlXAGnFoJ93B38ODxNECs+31Jmf1eXxsrAQwuJoBB/zICWG3C3CSyIef1BOmqWfu/On+87w8U3NkQr5sE1urOuO2d/fWhgAetFLxLNr9y8wbnLjxqvqHIznu2gDlsre5DXr/ohdNHZre3115U2Rcs/mlarxiH6kKV4b3D2Bof/XJKd8ZWnqEFVI7nMF1rBnMlNQhrhjJVSIqquXpLJFfJjGtjK+embz7QjwwUCDOwcxaU3sHGu+WL+HQcdSpvs6AOpLrNBBBIUAYSbAJpF3abpjW84HB66aY1w1yU1YBPpnynnExrpd9oXCcKeYQRZ3a1M0HFFwX139tekwQa298JrJ/i+/vyrYkwnA77eJwM4jiK4ogm0SRJ4sk4zcY4GWZbjSJkJIFuCidnQBU4HtXUqOscHfYf31LbNpozUNUUvFHSfXD3Exs4WFDfoIZ1GnjVUFKlBMNyr6M8wHvij1mFv+Lr6MN1lU/xN6rgD/uZ9qbGXL/X3FDwvyV/Ktito9iERf1JTEl3ksRJd5jRcXdK8aiLp+koGVBGhtklR4Ff/wJzBT653BUAAA==</values>
@@ -1341,10 +1341,10 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 05:52:05</sys_created_on>
         <sys_id>f6a37b0dc3120f50ae099e1d050131ef</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:25</sys_updated_on>
+        <sys_updated_on>2026-07-27 06:16:48</sys_updated_on>
         <ui_id>df1e78e3-8d71-44f2-adc0-a7a2994c677a</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/42SXWvbMBSG/4uuHWPPcezkrrQUBtsK69abUsKxdJwIZMnVR1rP5L/vKHbSrYWxy/Ocr/e80uPIpGAbBnWZN21R86L8VDdlBpit15iLrMzyIseGJUxDh1TZw6AMCAIHUCGScXShaZV5Sefc8UhZIV2vYHj4ZxHfSyUsarZ5fEpotKUdHi3bjO9S/ytSQYPqL5UfZPuhj8B5K/Vujr/MbfdnaKyIMvKE4atHLZD2t6AcJqwDLcAbO1yIRRB3Wr2BvdSeprFY/OrkL9pXZ1kWK1ukmzhO2Uu4nd2acHsDHkhK4D7YuZTvjeToJjcEthCUv/6TTQV3vZdGTy0eGnXuNip0+ttkBbsMOD8OkeBIBPbx1Kh9PqS935uX72eVt1KfXJmTynBQlwg8edcEH/WMLMgf72yeyAejUWFHG7cd9D2RbW/NQZ62kOgu3SkK0vhvSJ2TO50Cjxem9ASQ3hK/OeEHsDKe+5XGUHNc91PL54Cf48cRy4qvqqJaFKt1sViWjVjUbVUsVs2Si7WocAUFOybMDe5agXNvRtELbZ9DPHOybTZoO3kcW7iVvb8iUQecvTg+/QbAGiFMVgMAAA==</values>
@@ -1365,17 +1365,44 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 05:51:41</sys_created_on>
         <sys_id>f893fb45c3520f50ae099e1d0501318a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:25</sys_updated_on>
+        <sys_updated_on>2026-07-27 06:16:48</sys_updated_on>
         <ui_id>fc76537f-a3e2-43a6-ba22-9cf09479468b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VUTY/aMBD9K5HPgBKyWT5uFduVVtoPqVT0sFpFjjMBt46d2g4sRfz3jomBdBdVi8qtl0Tz/GzPPL+Z5w2hzHIl76SxVDKYrs1dTsYkLNh1PxvS4SDux3EYsghGyWAQw5BlYTYC0iHc8ZKMRRlj10kchSHy4qyI8lEUjoAlw0E+QJ6kJSBTqHkqYAkCoSUVtcO4LBSGOTeVoOuZR+8alC24yDVIMn5+6ZCKajzHgibjzZuljyYiaIa3j8m9z+JEYnZdOYgtFGfg43u/bbIHlc5dGmGHwKsFmQPeX1BhoENKKnNqlV4fEA00f5LiCCy4tHgaceRXw3/hfVeh4xWAFTFo1g5h6sVp4OKGWjq1uma21p7aJGtQi82hxG43eFQSgm63pXYr9W3nyPVyv3kTz4zazG9USy7nLfIKkSO53yZ/1lrpFhV87LnxFl8uh4LWwk7OryD6cAX9cyqIz6jgylXQiP9UuR5CSuQ8QzOxfxol6lI+Nj4jh3pnb+zfoDcnu6A2aAGonM2cb7yJiulCrb7sPXLL5S4jvygUo+IQUWs1z2rr9N0QEFDiQWlJqwqFSCutlny3GZMte3OBQa8QaoWXGj6XvWY89NDVtHeL+M0OnlHNXZkPeAxu3naIWZuJoMYci0ULpz9rl0lTuq8h3Qm128I0r+wnvGAJPl0n/78NpH78tzkAyZ99X4IxdA6tR/664CbApQB/hVZlwGqL3+9cU4RMDUFdoRgwDjYbU2dOqt4KsoVSP1IcItJut+8n2mUOPW8gfkCIvdEfDiqclMYPRYM+2rVOeyhO9+C+Ly82FPtJcpmpeGrOvO/csxr3/+vLl9+2ou3IKggAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f893fb45c3520f50ae099e1d0501318a"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9c93bb45c3520f50ae099e1d05013166"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9c93bb45c3520f50ae099e1d05013166"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9c93bb45c3520f50ae099e1d05013166^sys_idNOT IN7f09dc15c3960f50ae099e1d050131bd"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bf09dc15c3960f50ae099e1d050131bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story sprint email subflow">9c93bb45c3520f50ae099e1d05013166</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-24 08:35:27</sys_created_on>
+        <sys_id>7f09dc15c3960f50ae099e1d050131bd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-24 08:36:58</sys_updated_on>
+        <ui_id>43e6567a-e21b-4515-bb82-c0172dd37ffe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rxtWP8mSy5K9sKhbUZTSiUUYwsHSdisuRJctIs5L/vyB9pWBM2tl3uLnqPdM77Hj9k76nG1o01S3VtDF9Jb/bl2fe4dBr+3nuSVODNPKok45YrmbeC722IaFxBA1WaXZWqkSxAnXFTC7J7vFCmay6Yhn5OTTR2s6C92f6nkt3VkAtSgMAuC6u5XOFzzvBUhqSMpjSiSTxO4jCM36VRMU6KKGYJAZLgveHh+8H21adW8S/mcfNQN8MkdO1sRaHvwYsFyQBHl0QY8L2KSEas0rujooGwuRSvwppLi+08d/nF8O/YO84yd7EEzEihKx6Peb+3TqZrxSnMa2ewUywpRP+GKtFU8r7L4TYOJWmEHTaOSmOwH9TOtHPRWyoXa7V9GAbecNkG7ItCUSKOJ2JxDUVjwbgPAwIqbJRXpK5xOXmt1Ya3j9FLFawEHoJSqC0OdQwFhDrjAe6IBDeof2jlR6K5S3GHbfBxZ7MghtO85Q3bWY0RDu1a8m+NM9QF7KPk3TbwgqGa1/Ya52ygd33w38J6wul+nyVhmZZpMZokQEdpNqEjMgE2SsdJySaQkGk4CR5aXg+H28X9fPnx7vPy6S3Tf9PqX/A/JVmZRWF2nv90fI7/M+Rfhj7+BfTuM/0m82EY/of+FHpu8g7ePls7/I+Zf3aAdxNMxw0Dyg0aWTrtdvgfd4UdAsDpqbRV+quL8KodfgBbPWO8EQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=9c93bb45c3520f50ae099e1d05013166"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=9c93bb45c3520f50ae099e1d05013166"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -2095,7 +2122,7 @@ Sample sub-flow to handle various JIRA webhook events.
 &lt;/html&gt;</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>jira_story_sprint_email_subflow</internal_name>
-        <label_cache>[{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.sprint_details","label":"2 - Extract sprint details --2➛Sprint details","reference_display":"Sprint details","type":"string","base_type":"string","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["parm1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce7a926c-5760-4adf-b187-e2f66c160694"}},{"name":"530f4f4b-73ec-457c-a7ed-463fd7e3a907.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.story_id1","label":"2 - Extract sprint details --2➛Story_id","reference_display":"Story_id","type":"string","base_type":"string","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null,"conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fcbf20e7-a648-452a-877e-912f37adce17"}},{"name":"undefined","label":" - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null]},"attributes":{}},{"name":"subflow.webhook_event","label":"Input➛Webhook Event","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Issue Created","value":"jira:issue_created","order":1.0},{"label":"Issue Updated","value":"jira:issue_updated","order":2.0},{"label":"Issue Deleted","value":"jira:issue_deleted","order":3.0},{"label":"Comment Created","value":"comment_created","order":4.0},{"label":"Comment Updated","value":"comment_updated","order":5.0},{"label":"Comment Deleted","value":"comment_deleted","order":6.0},{"label":"Worklog Created","value":"worklog_created","order":7.0},{"label":"Worklog Updated","value":"worklog_updated","order":8.0},{"label":"Worklog Deleted","value":"worklog_deleted","order":9.0},{"label":"Attachment Created","value":"attachment_created","order":10.0},{"label":"Attachment Deleted","value":"attachment_deleted","order":11.0},{"label":"Project Created","value":"project_created","order":12.0},{"label":"Project Updated","value":"project_updated","order":13.0},{"label":"Project Deleted","value":"project_deleted","order":14.0},{"label":"Version Created","value":"jira:version_created","order":15.0},{"label":"Version Updated","value":"jira:version_updated","order":16.0},{"label":"Version Deleted","value":"jira:version_deleted","order":17.0},{"label":"Version Released","value":"jira:version_released","order":18.0},{"label":"Version Unreleased","value":"jira:version_unreleased","order":19.0},{"label":"Version Moved","value":"jira:version_moved","order":20.0}]},{"name":"subflow.payload","label":"Input➛Payload","reference":"","reference_display":"","type":"string_full_utf8","base_type":"string_full_utf8","column_name":"","usedInstances":{"df1e78e3-8d71-44f2-adc0-a7a2994c677a":["payload"]},"attributes":{"uiType":"string_full_utf8","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a8483db5-7fcc-4be1-a877-d6f0d1f6ed27","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <label_cache>[{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.sprint_details","label":"2 - Extract sprint details --2➛Sprint details","reference_display":"Sprint details","type":"string","base_type":"string","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["parm1"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"ce7a926c-5760-4adf-b187-e2f66c160694"}},{"name":"530f4f4b-73ec-457c-a7ed-463fd7e3a907.Record","label":"3 - Look Up Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"5d114a19-f905-4385-b969-bd49de108d05":["record"],"43e6567a-e21b-4515-bb82-c0172dd37ffe":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"df1e78e3-8d71-44f2-adc0-a7a2994c677a.story_id1","label":"2 - Extract sprint details --2➛Story_id","reference_display":"Story_id","type":"string","base_type":"string","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null,"conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"fcbf20e7-a648-452a-877e-912f37adce17"}},{"name":"undefined","label":" - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event - Fire Event","usedInstances":{"530f4f4b-73ec-457c-a7ed-463fd7e3a907":[null]},"attributes":{}},{"name":"subflow.webhook_event","label":"Input➛Webhook Event","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Issue Created","value":"jira:issue_created","order":1.0},{"label":"Issue Updated","value":"jira:issue_updated","order":2.0},{"label":"Issue Deleted","value":"jira:issue_deleted","order":3.0},{"label":"Comment Created","value":"comment_created","order":4.0},{"label":"Comment Updated","value":"comment_updated","order":5.0},{"label":"Comment Deleted","value":"comment_deleted","order":6.0},{"label":"Worklog Created","value":"worklog_created","order":7.0},{"label":"Worklog Updated","value":"worklog_updated","order":8.0},{"label":"Worklog Deleted","value":"worklog_deleted","order":9.0},{"label":"Attachment Created","value":"attachment_created","order":10.0},{"label":"Attachment Deleted","value":"attachment_deleted","order":11.0},{"label":"Project Created","value":"project_created","order":12.0},{"label":"Project Updated","value":"project_updated","order":13.0},{"label":"Project Deleted","value":"project_deleted","order":14.0},{"label":"Version Created","value":"jira:version_created","order":15.0},{"label":"Version Updated","value":"jira:version_updated","order":16.0},{"label":"Version Deleted","value":"jira:version_deleted","order":17.0},{"label":"Version Released","value":"jira:version_released","order":18.0},{"label":"Version Unreleased","value":"jira:version_unreleased","order":19.0},{"label":"Version Moved","value":"jira:version_moved","order":20.0}]},{"name":"subflow.payload","label":"Input➛Payload","reference":"","reference_display":"","type":"string_full_utf8","base_type":"string_full_utf8","column_name":"","usedInstances":{"df1e78e3-8d71-44f2-adc0-a7a2994c677a":["payload"]},"attributes":{"uiType":"string_full_utf8","uiTypeLabel":"String (Full UTF-8)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a8483db5-7fcc-4be1-a877-d6f0d1f6ed27","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>Jira story sprint email subflow</name>
         <natlang/>
@@ -2112,7 +2139,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a7c37785c3520f50ae099e1d0501313e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2120,7 +2147,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -2238,7 +2265,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>63c37785c3520f50ae099e1d05013145</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2246,7 +2273,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -2431,7 +2458,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a3c37785c3520f50ae099e1d05013142</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2439,7 +2466,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -2709,7 +2736,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>27c37785c3520f50ae099e1d05013141</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2717,7 +2744,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -2817,7 +2844,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e3c37785c3520f50ae099e1d05013143</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2825,7 +2852,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -2925,7 +2952,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>67c37785c3520f50ae099e1d05013153</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2933,7 +2960,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -3033,7 +3060,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a3c37785c3520f50ae099e1d05013144</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3041,7 +3068,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -3141,7 +3168,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>27c37785c3520f50ae099e1d05013154</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3149,7 +3176,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -3249,7 +3276,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e7c37785c3520f50ae099e1d05013152</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -3257,7 +3284,7 @@ Sample sub-flow to handle various JIRA webhook events.
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:00</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
@@ -3382,16 +3409,16 @@ Sample sub-flow to handle various JIRA webhook events.
         <display_text/>
         <flow display_value="Jira story sprint email subflow">a7c37785c3520f50ae099e1d0501313e</flow>
         <generation_source/>
-        <order>4</order>
-        <parent_ui_id/>
+        <order>5</order>
+        <parent_ui_id>43e6567a-e21b-4515-bb82-c0172dd37ffe</parent_ui_id>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 06:17:20</sys_created_on>
         <sys_id>60793f81c3920f50ae099e1d05013142</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 06:17:20</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
         <ui_id>5d114a19-f905-4385-b969-bd49de108d05</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2X227bOBCGX0XQtWVQJHXyXdFsFgG67SLp9qYoDIocxgxkyaGktN4g796hJJ8bNw7SAIvujQEND/r5z3wa+vO9b5Q/8VMpGAEFWjPCwpAkicgiJWSSsVyHGfgjvxRzwJlwB2Uz7R5G/p0oWheMRMRZLiPJIkp0RASQLINQkYiELNQxTlWmXhRi+WlY8W1KSRJyyqZ1WX2d3kzJ+MZY4dVNZZcezIUpcJGcmUJZKP3J5y8jfyEsvrYB60/u94aeeohC5FDg1D/cKR45VLNcuJgFDbi/XIXeDUsvt+KVVU5NOPLhWwOlApShRVHDyJ+LUgl3GH/S2BYDFoT6UBbL9YyZQQkT/wxqY0F5V8u6gbnXKfOamWi8ela1hfJy8LSb4btNv9XmX1TH6GhL4MSvl3V/BgvXpnYWbY1PB+9X5/Yuu0lWNKYqcaI+E424QpWyaa3brXO+MhLq3l20VLRF83Y71k/4sOj26JY0Ii8e0yKrop2X73u3/fWOq2rASFujTlg4E50tg0f6alZ9XTt+bsrO72GwqKQotqaCsHJ2bqBQ+ykVTWNN3jZO/L3fmo+HKe6DP0oyFDB3e83FYmHK6+nCVnem04HHmo+vC3wY6wKrWGEqr8uxkM6UMaZfjM8xftaFPwlrnEN/4TadJ635pzS3LVx0coEwUIkOEsF5wHmUB3nOWSBJlGWCUKpD6j+MnLlvC1HXGyvxENPb1hnRGztYOO3T4pZIaxbNGxR1B4NbD6OBe0mOISP4BhELEqt9i/n7+4gRzTXPg4SBDHiUyEAkoAIeM60SYCIjyfiyW/fwcPgJOJnvJ4gt1vkb1O6rH+BWlWy7pBq1h/fZMOJdnG0Apy8B+J+uUHphXpXfgGw8bas5sg4e9NR3BB3B/BGqX57h5yDbu3ACsY9QuZubXS53s/MqZOpQiiikLKAMC5xnMg1SDviDfFKepZLK+Blk9k7/DM+jHU0kmwJflc6Kzlri5/d2arClHJJ3CXg4/DIr76IfP5HDn6tacfhxkLWncqCwe9xuu++2l3nv+4GBQXacwSGygbAvxzVKKfkPoXR693uEpR2Hd1Ha8fhVSMoo5zpO0yCnArtEGnPscSQN8B5IKNYTZRH7BT1OpUfLNd+UJxb+PNxpcUqHkKTAglQlIbZlTQOhJME+J2iWcRnjZuN6YfFLj840eGutf9Tqnr/RaWQ+4agrMv9ebeWFhwYMfOIdEYthj82rVXDgkp/I5W5zfFMuvc7u/sproa6KO6i9pvLcn4HhVVsUk9+S47UTuwyvc/Eq/MYRyQihOlBxCgEPXQ2HWRpQyvJQxZLTOPsV/PKjRa13y5du8fsCd84nvPyQKHoo6RSiov+J+k2I0jzmTCZJwIn735Sl2BETiAIWKZ1wlcg4DV+QqC/fAZ9EIWfvEQAA</values>
@@ -3446,7 +3473,34 @@ Sample sub-flow to handle various JIRA webhook events.
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=84d3b785c3520f50ae099e1d05013197"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a7c37785c3520f50ae099e1d0501313e"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a7c37785c3520f50ae099e1d0501313e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a7c37785c3520f50ae099e1d0501313e^sys_idNOT IN7e69dc55c3960f50ae099e1d050131aa"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">bf09dc15c3960f50ae099e1d050131bc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Jira story sprint email subflow">a7c37785c3520f50ae099e1d0501313e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-24 08:37:02</sys_created_on>
+        <sys_id>7e69dc55c3960f50ae099e1d050131aa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
+        <ui_id>43e6567a-e21b-4515-bb82-c0172dd37ffe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K5WfQxQIgZW3iq5SpbZMBVWapiq68QdYM3ZmO1CG+O+7TsKHVqqt6h73hs/9OvfkHrElpvJl5d3MXDkn55qMvj1HROqA4e8t0bDkZESo0Ux6aXReAxFZgapCwHJqLLsQptIsRpxJVyrYPL0RpgupmOXtnBIsdvPcktH2t5BkWC0SEN1L2qVpb5D2kqT3qd8tBmnR7bEUOKTYUEHBFaaO9wQv7mokepO535QBd95KPW/fd22X6R5E0oFVN4kIf/FcM458BCjHI7IEzcAbuzkglgObaHUEFlJ7bEdC8ouTP3FgL8tCouC4IuVN8PDMW9kaWFyDB6RSUV/ZNpUujKTcNeIwLqBSfnyKNQmTMqzalHgo1L7aqGqpHxpFyKHB/ishUjkkwcuwaaDe7iGmC7N+3LO8kbpWpQ0qQ0EdXuBRu6Lygc+WcMWX2ChfQlmionlpzUrWxchlGc8VPmKhzBqHhruLgQbiMQoL8Q3i1zX8BFaGLe6xDRY3NAtwkub1jWI7lImTXUTcxo0VOHdcEtXNf1SBYrNyu1ze6BNKqJWlv8LJK97usYten/zJtW+3WZqIvugXnWHKaaefDWkHhpx1+oNUsCFP4TIZxo/11e92t9OHyezz/ZfZ19fO+Eir97noEjKRdZPsvIv6g3MuOuOfd1qn9wfrhO/2l85JkuS/dT5sHeny5uDb3erh/9A5z8EmzcyD1lQ6pDYL2O3+PyUENnhckp5Ca2O/h6WO2O4XTM8eAp0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a7c37785c3520f50ae099e1d0501313e"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=a7c37785c3520f50ae099e1d0501313e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -3742,9 +3796,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>23c37785c3520f50ae099e1d0501318c</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>project_updated</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3762,9 +3816,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>27c37785c3520f50ae099e1d0501317c</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:issue_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3782,9 +3836,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>27c37785c3520f50ae099e1d05013191</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3802,9 +3856,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2bc37785c3520f50ae099e1d05013181</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>comment_updated</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3822,9 +3876,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>2fc37785c3520f50ae099e1d05013186</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>worklog_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3842,9 +3896,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>63c37785c3520f50ae099e1d05013188</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>attachment_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3862,9 +3916,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>67c37785c3520f50ae099e1d05013179</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value/>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3882,9 +3936,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>67c37785c3520f50ae099e1d0501318d</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>project_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3902,9 +3956,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6bc37785c3520f50ae099e1d0501317d</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:issue_updated</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3922,9 +3976,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6bc37785c3520f50ae099e1d05013192</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_released</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3942,9 +3996,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6fc37785c3520f50ae099e1d05013182</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>comment_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3962,9 +4016,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a3c37785c3520f50ae099e1d05013184</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>worklog_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3982,9 +4036,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a7c37785c3520f50ae099e1d05013189</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>attachment_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4002,9 +4056,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>abc37785c3520f50ae099e1d0501318e</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4022,9 +4076,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>afc37785c3520f50ae099e1d0501317e</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:issue_deleted</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4042,9 +4096,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>afc37785c3520f50ae099e1d05013193</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_unreleased</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4062,9 +4116,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e3c37785c3520f50ae099e1d05013180</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>comment_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4082,9 +4136,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e3c37785c3520f50ae099e1d05013195</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_moved</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4102,9 +4156,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e7c37785c3520f50ae099e1d05013185</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>worklog_updated</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4122,9 +4176,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ebc37785c3520f50ae099e1d0501318a</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>project_created</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -4142,9 +4196,9 @@ Sample sub-flow to handle various JIRA webhook events.
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>efc37785c3520f50ae099e1d0501318f</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-07-24 07:15:01</sys_updated_on>
+            <sys_updated_on>2026-07-24 08:37:02</sys_updated_on>
             <value>jira:version_updated</value>
         </sys_choice>
     </sys_choice>
@@ -4160,16 +4214,16 @@ Sample sub-flow to handle various JIRA webhook events.
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"00d3b785c3520f50ae099e1d050131af","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id display_value="Jira story sprint email subflow">9c93bb45c3520f50ae099e1d05013166</plan_id>
-        <snapshot>23b68411c3160f50ae099e1d05013136</snapshot>
+        <snapshot>31165b46c3520310ae099e1d050131fb</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-24 05:52:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>00d3b785c3520f50ae099e1d050131af</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-24 07:15:02</sys_updated_on>
+        <sys_updated_on>2026-07-24 08:37:03</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
