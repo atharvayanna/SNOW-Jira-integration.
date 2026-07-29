@@ -34,27 +34,27 @@
         <layout>normal</layout>
         <list_table/>
         <lookup_dependent_question/>
-        <lookup_label/>
+        <lookup_label>project_name</lookup_label>
         <lookup_price/>
         <lookup_source/>
-        <lookup_table/>
-        <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_table>x_2071423_snow_j_0_jira_lookup_projects</lookup_table>
+        <lookup_unique>true</lookup_unique>
+        <lookup_value>project_name</lookup_value>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>true</mask_use_encryption>
-        <name>acceptance_criteria</name>
+        <name>project_name</name>
         <no_auto_populate_also_request_for>false</no_auto_populate_also_request_for>
         <not_available_conversation>false</not_available_conversation>
-        <order>700</order>
+        <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Acceptance Criteria</question_text>
+        <question_text>Project Name</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -82,20 +82,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-23 10:41:06</sys_created_on>
-        <sys_id>912cef3cc3128b50ae099e1d050131e5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Acceptance Criteria</sys_name>
+        <sys_created_on>2026-07-29 10:33:30</sys_created_on>
+        <sys_id>b5c3e236c3da4710ae099e1d0501316b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Project Name</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name>item_option_new_912cef3cc3128b50ae099e1d050131e5</sys_update_name>
+        <sys_update_name>item_option_new_b5c3e236c3da4710ae099e1d0501316b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-29 10:46:33</sys_updated_on>
+        <sys_updated_on>2026-07-29 10:46:34</sys_updated_on>
         <table/>
-        <tooltip/>
+        <tooltip>Select the project to create story</tooltip>
         <topic_block/>
-        <type>2</type>
+        <type>18</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -111,22 +111,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=912cef3cc3128b50ae099e1d050131e5"/>
-    <fx_price action="delete_multiple" query="id=912cef3cc3128b50ae099e1d050131e5"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b5c3e236c3da4710ae099e1d0501316b"/>
+    <fx_price action="delete_multiple" query="id=b5c3e236c3da4710ae099e1d0501316b"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>912cef3cc3128b50ae099e1d050131e5</id>
+        <id>b5c3e236c3da4710ae099e1d0501316b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-23 10:41:06</sys_created_on>
-        <sys_id>263ca37cc3128b50ae099e1d050131e6</sys_id>
+        <sys_created_on>2026-07-29 10:33:30</sys_created_on>
+        <sys_id>3d04ea36c3da4710ae099e1d0501312a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-23 10:41:06</sys_updated_on>
+        <sys_updated_on>2026-07-29 10:33:30</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -134,16 +134,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>912cef3cc3128b50ae099e1d050131e5</id>
+        <id>b5c3e236c3da4710ae099e1d0501316b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-23 10:41:06</sys_created_on>
-        <sys_id>a63ca37cc3128b50ae099e1d050131e5</sys_id>
+        <sys_created_on>2026-07-29 10:33:30</sys_created_on>
+        <sys_id>bd04ea36c3da4710ae099e1d05013129</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-23 10:41:06</sys_updated_on>
+        <sys_updated_on>2026-07-29 10:33:30</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

@@ -176,18 +176,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=3015e498479e43d011b3a22f316d43fe"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>3015e498479e43d011b3a22f316d43fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-21 06:54:03</sys_created_on>
-        <sys_id>05152898479e43d011b3a22f316d4319</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-21 06:54:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>payload</field>
         <id>3015e498479e43d011b3a22f316d43fe</id>
         <sys_created_by>admin</sys_created_by>
@@ -198,18 +186,6 @@
         <sys_updated_on>2026-07-21 07:11:55</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_3015e498479e43d011b3a22f316d43fe</table>
         <value>{{action.payload}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>3015e498479e43d011b3a22f316d43fe</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-21 06:54:03</sys_created_on>
-        <sys_id>c1152898479e43d011b3a22f316d431a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-21 06:54:03</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=3015e498479e43d011b3a22f316d43fe"/>
     <sys_translated_text action="delete_multiple" query="documentkey=3015e498479e43d011b3a22f316d43fe"/>
@@ -262,6 +238,7 @@
         <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -348,6 +325,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -435,6 +413,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -545,6 +524,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -632,6 +612,7 @@
         <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -694,11 +675,11 @@
         <sys_created_on>2026-07-21 06:54:02</sys_created_on>
         <sys_id>fc15e498479e43d011b3a22f316d43df</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>payload</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d644a418479e43d011b3a22f316d433d_payload_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-21 06:54:02</sys_updated_on>
         <url/>
@@ -718,11 +699,11 @@
         <sys_created_on>2026-07-21 06:54:03</sys_created_on>
         <sys_id>05152898479e43d011b3a22f316d432e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Sprint details</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d644a418479e43d011b3a22f316d433d_sprint_details_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-21 06:54:03</sys_updated_on>
         <url/>
@@ -741,11 +722,11 @@
         <sys_created_on>2026-07-21 06:54:03</sys_created_on>
         <sys_id>9d152898479e43d011b3a22f316d4337</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d644a418479e43d011b3a22f316d433d___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-21 06:54:03</sys_updated_on>
         <url/>
@@ -764,11 +745,11 @@
         <sys_created_on>2026-07-21 06:54:03</sys_created_on>
         <sys_id>c1152898479e43d011b3a22f316d4328</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_d644a418479e43d011b3a22f316d433d___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-21 06:54:03</sys_updated_on>
         <url/>

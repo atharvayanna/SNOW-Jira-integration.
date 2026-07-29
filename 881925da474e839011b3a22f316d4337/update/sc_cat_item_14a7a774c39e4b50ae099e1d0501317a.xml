@@ -6,7 +6,7 @@
         <billable>false</billable>
         <category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</category>
         <cc_render_type>system</cc_render_type>
-        <checked_out>true</checked_out>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -67,21 +67,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-23 10:21:40</sys_created_on>
         <sys_id>14a7a774c39e4b50ae099e1d0501317a</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Create Jira Story</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name>sc_cat_item_14a7a774c39e4b50ae099e1d0501317a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-27 08:21:13</sys_updated_on>
+        <sys_updated_on>2026-07-29 10:50:25</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>3</version>
+        <version>6</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="988b8afec3d64710ae099e1d0501316a" label="Jira_lookup_projects" max_length="40" name="x_2071423_snow_j_0_jira_lookup_projects" type="collection">
+        <element label="Project Name" max_length="40" name="project_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Project Key" max_length="40" name="project_key" type="string" unique="true"/>
+        <element label="Flag" max_length="40" name="flag" type="integer"/>
+        <index name="index" unique="true">
+            <element name="project_key"/>
+        </index>
+    </element>
+</database>

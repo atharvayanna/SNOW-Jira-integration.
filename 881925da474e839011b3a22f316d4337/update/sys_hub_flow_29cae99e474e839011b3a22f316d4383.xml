@@ -3,6 +3,7 @@
         <access>public</access>
         <acls/>
         <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=74000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -36,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>29cae99e474e839011b3a22f316d4383</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Jira story creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
@@ -44,11 +45,11 @@
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name>sys_hub_flow_29cae99e474e839011b3a22f316d4383</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-15 06:57:15</sys_updated_on>
+        <sys_updated_on>2026-07-23 10:10:07</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>c04c6192478e839011b3a22f316d4329</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=29cae99e474e839011b3a22f316d4383"/>
     <sys_variable_value action="delete_multiple" query="document_key=29cae99e474e839011b3a22f316d4383"/>
@@ -84,6 +85,7 @@
         <active>false</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>29cae99e474e839011b3a22f316d4383</identifier>
+        <identifier_type/>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-15 06:51:58</sys_created_on>
@@ -157,6 +159,7 @@
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -241,6 +244,7 @@
         <order>101</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -298,11 +302,11 @@
         <sys_created_on>2026-07-15 06:51:20</sys_created_on>
         <sys_id>f6eaa1de474e839011b3a22f316d43f0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_29cae99e474e839011b3a22f316d4383_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-15 06:51:20</sys_updated_on>
         <url/>
@@ -321,11 +325,11 @@
         <sys_created_on>2026-07-15 06:51:20</sys_created_on>
         <sys_id>feeaa1de474e839011b3a22f316d43cc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_29cae99e474e839011b3a22f316d4383_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-15 06:51:20</sys_updated_on>
         <url/>
@@ -337,6 +341,7 @@
         <access>public</access>
         <acls/>
         <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -441,6 +446,7 @@
         <order>100</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -525,6 +531,7 @@
         <order>101</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -627,11 +634,11 @@
         <sys_created_on>2026-07-15 06:51:57</sys_created_on>
         <sys_id>370b29de474e839011b3a22f316d439c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7f0b29de474e839011b3a22f316d438c_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-15 06:51:57</sys_updated_on>
         <url/>
@@ -650,11 +657,11 @@
         <sys_created_on>2026-07-15 06:51:57</sys_created_on>
         <sys_id>770b29de474e839011b3a22f316d43a6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
         <sys_policy/>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7f0b29de474e839011b3a22f316d438c_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-07-15 06:51:57</sys_updated_on>
         <url/>

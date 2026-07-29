@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="data_stream_connection_alias" label="Data stream connection alias" language="en" table="sys_data_source">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>data_stream_connection_alias</element>
+            <help/>
+            <hint/>
+            <label>Data stream connection alias</label>
+            <language>en</language>
+            <name>sys_data_source</name>
+            <plural>Data stream connection alias</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-07-23 10:33:31</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Data stream connection alias</sys_name>
+            <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+            <sys_update_name>sys_documentation_sys_data_source_data_stream_connection_alias_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-07-23 10:33:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

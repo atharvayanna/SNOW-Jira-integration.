@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 08:46:31</sys_created_on>
+        <sys_id>e28b8efec3d64710ae099e1d05013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2071423_snow_j_0_jira_lookup_projects.x_2071423_snow_j_0.user</sys_name>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_security_acl display_value="x_2071423_snow_j_0_jira_lookup_projects">9a8b4efec3d64710ae099e1d050131e1</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e28b8efec3d64710ae099e1d05013135</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 08:46:31</sys_updated_on>
+        <sys_user_role display_value="x_2071423_snow_j_0.user" name="x_2071423_snow_j_0.user">101925da474e839011b3a22f316d4389</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

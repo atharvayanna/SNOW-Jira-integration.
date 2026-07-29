@@ -3,6 +3,7 @@
         <access>public</access>
         <acls/>
         <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
         <attributes>labelCacheCleanUpExecuted=true</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
@@ -50,7 +51,7 @@
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record/>
+        <version_record>77c173b8c3528b50ae099e1d050131d7</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=70cfe5da478e839011b3a22f316d438e"/>
     <sys_variable_value action="delete_multiple" query="document_key=70cfe5da478e839011b3a22f316d438e"/>

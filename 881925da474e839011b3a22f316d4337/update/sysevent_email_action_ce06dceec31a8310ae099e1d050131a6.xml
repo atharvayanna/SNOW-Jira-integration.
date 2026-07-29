@@ -38,11 +38,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hello Team,</p>
-<p>A Jira story has been created for the following ServiceNow request.</p>
-<p>RITM: ${event.parm1.number}<br>Short Description: ${event.parm1.short_description}<br>Requested For: ${event.parm1.request.requested_for.getDisplayValue()}<br>Jira Story ID: ${event.parm2}</p>
-<p>Please use the Jira Story ID for tracking and follow-up activities related to this request.</p>
-<p>Thank you.</p>]]></message_html>
+        <message_html><![CDATA[<p>${mail_script:story_created_script}</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Story Created email</name>
@@ -64,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce06dceec31a8310ae099e1d050131a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Story Created email</sys_name>
         <sys_overrides/>
         <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
@@ -72,10 +68,21 @@
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
         <sys_update_name>sysevent_email_action_ce06dceec31a8310ae099e1d050131a6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-28 06:17:51</sys_updated_on>
+        <sys_updated_on>2026-07-29 11:12:59</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ce06dceec31a8310ae099e1d050131a6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-29 11:12:59</sys_created_on>
+        <sys_id>0c1d6a7ac31e4710ae099e1d05013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-29 11:12:59</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
