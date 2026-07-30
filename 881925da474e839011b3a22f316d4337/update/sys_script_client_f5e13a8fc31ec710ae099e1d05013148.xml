@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This client script is to show a banner message and inform user to close the Catalog task and Incident before directly closing RITM.</description>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>RITM changes to close complete</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+
+    if (isLoading || newValue == '')
+        return;
+
+    // Replace 3 with your Closed Complete value if different
+    if (newValue != '3')
+        return;
+
+    var ga = new GlideAjax('RITMValidationAjax');
+    ga.addParam('sysparm_name', 'shouldShowBanner');
+    ga.addParam('sysparm_ritm_sys_id', g_form.getUniqueValue());
+
+    ga.getXMLAnswer(function(answer) {
+        if (answer) {
+            g_form.addInfoMessage(
+                "<b>⚠ Reminder</b><br>"
+                + "This Requested Item has a Parent Incident and a Catalog Task. "
+                + "Before closing the RITM, please verify that:"
+                + "<ul>"
+                + "<li>The Parent Incident is resolved.</li>"
+                + "<li>The related Catalog Task has been closed.</li>"
+                + "</ul>"
+            );
+
+        }
+
+    });
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 06:31:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5e13a8fc31ec710ae099e1d05013148</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>RITM changes to close complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name>sys_script_client_f5e13a8fc31ec710ae099e1d05013148</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 06:37:28</sys_updated_on>
+        <table>sc_req_item</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
