@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>Jira auth for custom mapping</name>
+        <password>﷞﷟﷒a3636b07c3d20b10ae099e1d0501311f﷬﷔1﷬﷭kvLlnFGKl7CdoFpO0LzLwg==L4aGpLiefkskYaEpLDb3d0O9cygKAeJHnQ3DCbh2AoPuaFJiHVKtTNlDMZ915Otxc1X1ISGy0XR3Pcj66xjA5TmyUe_MKkpQ3Zr-wkS45jmIrWasBisiLcBQriy8Dk4_hzMP9zx4HFWow4-VnkbT3SObuR1zL37Unx3lXm3pJbkkHUlaiZ6398GyitLoD2XqigNqGLHdw5k8wnl32VNQ-2x3HDLnmC0nAscpMhtNF5VAqVnoU5vGb85L-RbhlkWuPXOQcKIMkg9fv7oRec4ONw==﷮﷯</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-30 09:49:00</sys_created_on>
+        <sys_id>4843e307c3d20b10ae099e1d05013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Jira auth for custom mapping</sys_name>
+        <sys_package display_value="SNOW-Jira integration" source="x_2071423_snow_j_0">881925da474e839011b3a22f316d4337</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_4843e307c3d20b10ae099e1d05013142</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-30 09:49:00</sys_updated_on>
+        <username>atharvay24@gmail.com</username>
+    </sys_auth_profile_basic>
+</record_update>
