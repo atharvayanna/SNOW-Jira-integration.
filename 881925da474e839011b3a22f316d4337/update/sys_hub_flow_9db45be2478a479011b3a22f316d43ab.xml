@@ -770,13 +770,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 09:20:24</sys_created_on>
         <sys_id>c4a6dbe6478a479011b3a22f316d4368</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SNOW-Jira integration">881925da474e839011b3a22f316d4337</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-30 06:51:40</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-07-31 06:22:53</sys_updated_on>
         <ui_id>5596c40a-e288-4981-b9ed-84f40494469c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1X227bRhD9FYHPXnV55+rNrWEkbdoEub0kATF7obUpRTK8OFEN/XtnKVKUdbMQC4YD6JHDmZ0zM+fskJ/uLC2tiRWG0o6S0AtD8G3bpkKwyHecSEQ2DWzOrQsrg5lCz6LMvypRx/+qORpvIW2M9e6uaniS5t/H/XstFwt0kLoqUph/fMhPTHUqS5VZk09fLqwCSsxWq9Ka3G28queFilPgKsXj3tWlzm4w/Ngi+sA3y+yjv9oqdpZmEqGx6lPkpTR47AtL/ahVJhWmTCCt1IU1g0xCnZdza1KXDRpKBfJ1ls5XHlOd1XiYZXx/VPo/PDmilBrPRGFtQi3frh7jrnFLs5jmWqjXRa3zbGmpgaddjMjTZpb9s6zBtFwl0KR133K0NBWepwoD2sDoMCXvpvn3t33Ca5219XUv01xAunqCGrvAm1pVZiCNfr/Rm6Xl1eZUVKpmmDGeQVGgJcYG3+o2C4KejW9SfBgbNiC6St9kYxCmwjE2E8bXaL9qzR+h1Kbcv/EYDDbpPmT6W6NemqkzG0JOeULA4x7xklARRgOHsIR7wMFlvi2sRdva+Ftjilo2qWtHvOwoOlSi1EV9iRBuVVf54qLTh+seopZwBhJVzWwG5W5tVIYjcedxWB7brqdQyBFlrAJXdWwVtkcZzlkZz0sZNuVSoTaIwz2feCIUhAEThCeoF1QLVcx+tDL4YUpFA4GwkvYcM6lBHVeDdTLa5P9ayGLxObsUQhU14ExGf5Qaya9hMvqcDVGwcohF57BYoMfvTaUzVVWjP5uq1okWsMy3Hss7n/jrus8ulf4KkE9xWxwx2j7w6t5sdw58z63hHr41Osv52ni6a0N6tgBgkvhgFmoQ+YR51CfcDXw3sH1crMnjF+rBbzWc3rB3WlkVpc5RHrv36koH7avDi3WH70k268P1DIFY0OjNUNC+Qvcoxjsr5pkpJgo8oFEEJHAZKoYB7lhKgeCWdRzqALj+CRbtQYZJbyBSS7RqTSnbejjVhngYUx/4qge1CXIPy/0zy58ZywNXJq6TMOILHuCPVsQIbgn87wJcCopKR4SPZ3lymFEwEAgqA1mpp+D5Eaj6wMsB1jbQPVwPzlx/Zlx3HZclLgOi8P4mXhRFJOKRIC4LmOe7rgJHPv5GT6Qt9rKK+gOFmgLRq3iq22+ENcbTbcq3OX6a9+/xL/236+6IY1H2wR9amKMXK5j74Hc64HmeKsgGIYQnE4L3q8tg6M19Hdwb0JNogVPGIWAukUrYxOOeIozZjDBX4r+BHSpb0p/Wwpf/AQI1A1KCFgAA</values>
+        <values>H4sIAAAAAAAA/+2XWW/bRhDHv4rAZ63Km1y9uTaMHmkT1ElekoCYPWhtSpEMDyeqoO/e4S1LsmwCVpC6euTsLOc/s/PbIT+sNSW0ueZ5wvBDz/Y8cAzD0DmnvmOaPvcN3TUY06ZaDEuJnmmWfJa8CP6WKzTeQVRW1vU6L1kYJV9n3boSmw06CJWnEazeP+bHFyoSmYy1+YdPUy2FDKMVMtPm652lp8qNgMkIXd80cSa/13oPJlGs0sqYF5mKb9vnV+32m86YZKKSY0w1+a2QsZCoI4Qol1NtCbGAIslW2rzISjRkEsTrOFr1HgsVF/gyrfL9lqt/MJyv63rlGUpMjctmtX8M2ro15vAKCkAlJS/KrHXli0RxmTdFETKEMiout22Nw+u0UEncbCmARd3uJCqX8Z9NNbT+Bd0xoaXMUYRMq0wr7W0i4c0i+fpXp/JaxXVR2sUo4RD1T1Bg6VhZVHrWWqne7lS5sezVWUZyiRGDJaQpWgI8qjtVR0HRy9lthA+zqoNQXa5u4xnwKsMZngDMrtF+VZvfQ6aqdP/A1+DmKty7WH0p5a9V/1ADPKazkIDNbGKHniRUd01CQ2YDA4s6Btc2Uy1f5ZcR5PlQKDyh4EtZpdmUrS1Q0NS42sIzlRYXKOpOtrXYTFvKLOtY23JzaNC8XC4hO0xYXrVa0Hoch2zfdRxnTxDccXbTK95LYQxf5pmvF8CXoTMhkTBiMtshNvc4oUA5YSFSh8zpkhon4Isdb1d/aE7MrX5PdXYDY1eDdT7ZpWhry2bzMb7gXKYF4ClNLjOFCCmYTz7Gwy7oHQLeOmw26PFzmatY5vnktzIvVKg4NPG297LWJ/i87XOI9f+C5HF3zhMOsbtzru6d4sGjHXP3WMfvntZyvnx+8MtH2AYHoII4UA1313cItXWHMMt1LNdwcMiHpxjuR79JsQmGyVjDmWYqQcgOz/iepnrp+JA/4Dtyyj+uvJ/ylfTJm0H6QymN4c4+c/cSuPNdG3TfB+JaFLmjgPNe14HgxDdN3QSwnJMM/aPdK+yhSesmzrd426dq/LR6PHrHzqsu/K6cMaw4Z1ZeAiuuJULLDClxOHPxB9SnBCcW/o8CDiipC5N7p2AlPN6tMDQnxsQkpHxeWp4Qv6PlYhCwL2kMMe6ZmJdAjGVaNLQoEImzhNi+7xOf+ZxY1KW2Y1kSTHGK6RIKgz/YsboztGeZYj4yWKj6W2iLG30fnDrG+FnzuJaOnne1mMkvvZiHRLYksSSJJMQ7KL3NSvnTdau1xcl7Npzs/yVMQ6Xv03Sv1t+FKKZTBi61iJDcIDazJaHUoIRaAv+ZDE8aQn9Goj79C1prZAtsGAAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c4a6dbe6478a479011b3a22f316d4368"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9db45be2478a479011b3a22f316d43ab"/>
@@ -2156,9 +2156,9 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9db45be2478a479011b3a22f316d43ab"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9db45be2478a479011b3a22f316d43ab^sys_idNOT INd3a713aa478a479011b3a22f316d43b3"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@4c74c889</plan>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"d3a713aa478a479011b3a22f316d43b3","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id display_value="Jira story retry subflow">9db45be2478a479011b3a22f316d43ab</plan_id>
-        <snapshot>a6a7df6a478a479011b3a22f316d439e</snapshot>
+        <snapshot>31dd3f57c3968b10ae099e1d050131f4</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-07-16 09:24:59</sys_created_on>
         <sys_domain>global</sys_domain>
